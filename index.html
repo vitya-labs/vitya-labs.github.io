@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitya Labs | Hobby projects, experiments and useful tools</title>
+  <meta
+    name="description"
+    content="Vitya Labs landing page a GrillHub, Shopper24, EnerGourmet és Vitya's Life projektekhez."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="Vitya Labs nyitóoldal">
+        <span class="brand-mark" aria-hidden="true">VL</span>
+        <span class="brand-copy">
+          <strong>Vitya Labs</strong>
+          <span>maker lab / playground</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#projects">Projektek</a>
+        <a href="#story">Mi ez</a>
+        <a href="#build-principles">Elvek</a>
+        <a href="#footer">Kapcsolat</a>
+      </nav>
+
+      <a class="ghost-button nav-cta" href="#projects">Open lab</a>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Independent software workshop</p>
+          <h1>Projektlabor azoknak az ötleteknek, amik nem akartak draftban maradni.</h1>
+          <p class="hero-text">
+            A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek.
+            Köztük van közös sütést szervező community app, bevásárlás-optimalizáló eszköz, AI italpárosító,
+            és egy játék is, ami a 2024-2025-ös énemet dolgozza fel.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects">Projektjeink</a>
+            <a
+              class="ghost-button"
+              data-config-link="organization.githubUrl"
+              data-missing-label="GitHub org link hiányzik"
+              href="#"
+            >
+              GitHub organization
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Vitya Labs gyors áttekintés">
+            <article class="stat-card">
+              <strong>4</strong>
+              <span>kiemelt projekt</span>
+            </article>
+            <article class="stat-card">
+              <strong>1</strong>
+              <span>személyes org</span>
+            </article>
+            <article class="stat-card">
+              <strong>100%</strong>
+              <span>kíváncsiságból építve</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel" data-reveal>
+          <div class="panel-frame">
+            <p class="panel-label">lab signal</p>
+            <div class="signal-grid" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="panel-copy">
+              <h2>Hasznos játszótér</h2>
+              <p>
+                Produktivitás, közösségi workflow, AI-kísérletek és személyes storytelling egy helyen.
+              </p>
+            </div>
+            <ul class="mini-list">
+              <li>community workflows</li>
+              <li>personal software</li>
+              <li>AI assisted experiments</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">The workbench</p>
+          <div class="section-title-row">
+            <div>
+              <h2>Aktív projektek</h2>
+              <p>
+                Ezek a Vitya Labs jelenlegi node-jai: közösségi appok, utilityk, AI kísérletek és játékos webes projektek.
+              </p>
+            </div>
+            <div class="section-pill">4 active nodes</div>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="story-copy" data-reveal>
+          <p class="eyebrow">Lab notes</p>
+          <h2>Ahol a hobbi projekt nem side quest, hanem valódi prototípus.</h2>
+          <p>
+            A Vitya Labs nem portfólió-polírozásra készült. Inkább egy saját mérnöklabor, ahol a jó ötletek gyorsan
+            kapnak működő UI-t, valódi workflow-t és egy kis karaktert is.
+          </p>
+          <p>
+            A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul:
+            sütést szervezni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, vagy
+            játékon keresztül elmesélni egy időszakot.
+          </p>
+        </div>
+
+        <div class="story-panels" data-reveal>
+          <article class="story-card">
+            <span>01</span>
+            <h3>Build fast, keep taste</h3>
+            <p>A gyorsaság fontos, de a megjelenés és a hangulat is része a terméknek.</p>
+          </article>
+          <article class="story-card">
+            <span>02</span>
+            <h3>Personal need first</h3>
+            <p>A legtöbb projekt onnan indul, hogy jó lenne, ha ez már létezne a saját életemben.</p>
+          </article>
+          <article class="story-card">
+            <span>03</span>
+            <h3>Ship weird things</h3>
+            <p>Nem csak hasznosnak kell lenniük. Lehetnek emlékezetesek, szellemesek vagy kicsit abszurdak is.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section principles-section" id="build-principles">
+        <div class="section-heading narrow" data-reveal>
+          <p class="eyebrow">Build principles</p>
+          <h2>Hogy állnak össze ezek a projektek?</h2>
+        </div>
+
+        <div class="principles-grid">
+          <article class="principle-card" data-reveal>
+            <p class="principle-kicker">Community</p>
+            <h3>Valódi workflowk köré épülnek</h3>
+            <p>
+              GrillHubnál az események, a receptek, a meghívók és a shopping listák egymásra épülnek, nem külön szigetként léteznek.
+            </p>
+          </article>
+
+          <article class="principle-card" data-reveal>
+            <p class="principle-kicker">Utility</p>
+            <h3>A praktikum látványos is lehet</h3>
+            <p>
+              Shopper24 megmutatja, hogy egy egyszerű lista-feldolgozó eszköz is lehet sokkal átláthatóbb, ha térképpel és útvonallal dolgozik.
+            </p>
+          </article>
+
+          <article class="principle-card" data-reveal>
+            <p class="principle-kicker">Experiment</p>
+            <h3>Az AI nem csak automata, hanem karakter is</h3>
+            <p>
+              EnerGourmetnél a pairing motor egyszerre ad hasznos és szórakoztató választ, a Vitya's Life pedig játékká alakít személyes témát.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer-copy">
+        <p class="eyebrow">Ready for the next node?</p>
+        <h2>Ha kíváncsi vagy a projektekre, indulj a GitHub organization oldaláról.</h2>
+        <p>
+          A publikus linkek külön konfigurációs fájlban vannak, így később is gyorsan cserélhetők vagy bővíthetők.
+        </p>
+      </div>
+
+      <div class="footer-actions">
+        <a
+          class="primary-button"
+          data-config-link="organization.githubUrl"
+          data-missing-label="GitHub organization link hiányzik"
+          href="#"
+        >
+          GitHub org megnyitása
+        </a>
+        <a
+          class="ghost-button"
+          data-config-link="contact.emailUrl"
+          data-missing-label="Kapcsolati e-mail hiányzik"
+          href="#"
+        >
+          Kapcsolat
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <span>Vitya Labs</span>
+        <span id="current-year"></span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./site-config.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
