@@ -4,6 +4,8 @@ const LAB_PROJECTS = [
     name: "GrillHub",
     kicker: "Közösségi BBQ platform",
     icon: "GH",
+    iconSrc: "./assets/icons/grillhub-logo.png",
+    iconAlt: "GrillHub logo",
     accent: "#ff914d",
     layout: "featured",
     screenshotSrc: "./assets/screenshots/grillhub.png",
@@ -50,6 +52,8 @@ const LAB_PROJECTS = [
     name: "Shopper24",
     kicker: "Bevásárlás-optimalizáló app",
     icon: "S24",
+    iconSrc: "./assets/icons/shopper24-logo.png",
+    iconAlt: "Shopper24 logo",
     accent: "#7ec8ff",
     layout: "half",
     screenshotSrc: "./assets/screenshots/shopper24.png",
@@ -75,6 +79,7 @@ const LAB_PROJECTS = [
     icon: "VL",
     iconSrc: "./assets/icons/vityas-life-favicon.png",
     iconAlt: "Vitya's Life pixel favicon",
+    iconRendering: "pixelated",
     accent: "#ffb66b",
     layout: "half",
     screenshotSrc: "./assets/screenshots/vityas-life.png",
@@ -202,7 +207,10 @@ function buildProjectPreview(project, liveUrl) {
 
 function buildProjectIcon(project) {
   if (project.iconSrc) {
-    return `<img src="${project.iconSrc}" alt="${project.iconAlt || ""}" loading="lazy">`;
+    const renderingClass =
+      project.iconRendering === "pixelated" ? " project-icon-image--pixelated" : "";
+
+    return `<img class="project-icon-image${renderingClass}" src="${project.iconSrc}" alt="${project.iconAlt || ""}" loading="lazy">`;
   }
 
   return project.icon;
