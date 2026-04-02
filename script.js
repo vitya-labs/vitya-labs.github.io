@@ -6,6 +6,8 @@ const LAB_PROJECTS = [
     icon: "GH",
     accent: "#ff914d",
     layout: "featured",
+    screenshotSrc: "./assets/screenshots/grillhub.png",
+    screenshotAlt: "GrillHub project screenshot",
     summary:
       "Közös sütések szervezésére épített community app, ahol az események, receptek, meghívók, profilok és bevásárlólisták ugyanabban a workflow-ban találkoznak.",
     details: [
@@ -26,7 +28,9 @@ const LAB_PROJECTS = [
     kicker: "AI assisted energy drink sommelier",
     icon: "EG",
     accent: "#ffd176",
-    layout: "standard",
+    layout: "half",
+    screenshotSrc: "./assets/screenshots/energourmet.png",
+    screenshotAlt: "EnerGourmet project screenshot",
     summary:
       "AI által támogatott pairing app, ami étel alapján ajánl és ellenjavall energiaital-ízeket, rövid indoklással és karakteres prezentációval.",
     details: [
@@ -47,7 +51,9 @@ const LAB_PROJECTS = [
     kicker: "Bevásárlás-optimalizáló app",
     icon: "S24",
     accent: "#7ec8ff",
-    layout: "standard",
+    layout: "half",
+    screenshotSrc: "./assets/screenshots/shopper24.png",
+    screenshotAlt: "Shopper24 project screenshot",
     summary:
       "Nyers bevásárlólistából boltban is használható útvonalat készít: kategóriák szerint rendezi a tételeket, és vizuális áruháztérképen mutatja az útvonal logikáját.",
     details: [
@@ -68,7 +74,9 @@ const LAB_PROJECTS = [
     kicker: "Személyes játékprojekt",
     icon: "VL",
     accent: "#ffb66b",
-    layout: "wide",
+    layout: "half",
+    screenshotSrc: "./assets/screenshots/vityas-life.png",
+    screenshotAlt: "Vitya's Life project screenshot",
     summary:
       "Böngészős, sokoban-jellegű puzzle játék irodai hangulattal, amely a 2024-2025-ös énemet és annak rutinjait, fókuszait és belső poénjait fordítja át játékos pályákra.",
     details: [
@@ -151,23 +159,68 @@ function buildProjectLink(url, label, className) {
   return anchor;
 }
 
+function renderSignalGrid() {
+  const container = document.getElementById("signal-grid");
+  if (!container) {
+    return;
+  }
+
+  container.replaceChildren();
+
+  LAB_PROJECTS.forEach((project) => {
+    const tile = document.createElement("a");
+    tile.className = "signal-tile";
+    tile.href = `#project-${project.key}`;
+    tile.setAttribute("aria-label", `${project.name} details`);
+    tile.style.setProperty("--project-accent", project.accent);
+
+    tile.innerHTML = `
+      <img src="${project.screenshotSrc}" alt="${project.screenshotAlt}" loading="lazy">
+      <span class="signal-caption">${project.name}</span>
+    `;
+
+    container.appendChild(tile);
+  });
+}
+
+function buildProjectPreview(project, liveUrl) {
+  const preview = document.createElement(isConfiguredUrl(liveUrl) ? "a" : "div");
+  preview.className = "project-media";
+  preview.innerHTML = `<img src="${project.screenshotSrc}" alt="${project.screenshotAlt}" loading="lazy">`;
+
+  if (preview.tagName === "A") {
+    preview.href = liveUrl;
+    preview.target = "_blank";
+    preview.rel = "noreferrer";
+    preview.setAttribute("aria-label", `${project.name} preview`);
+  }
+
+  return preview;
+}
+
 function renderProjects() {
   const container = document.getElementById("projects-grid");
   if (!container) {
     return;
   }
 
+  container.replaceChildren();
+
   LAB_PROJECTS.forEach((project) => {
     const projectLinks = getNestedValue(config, `projects.${project.key}`) || {};
     const card = document.createElement("article");
+    const projectId = `project-${project.key}`;
     const layoutClass =
       project.layout === "featured"
         ? "project-card--featured"
         : project.layout === "wide"
           ? "project-card--wide"
-          : "project-card--standard";
+          : project.layout === "half"
+            ? "project-card--half"
+            : "project-card--standard";
 
     card.className = `project-card ${layoutClass}`;
+    card.id = projectId;
     card.style.setProperty("--project-accent", project.accent);
 
     const detailItems = project.details
@@ -178,25 +231,30 @@ function renderProjects() {
       .map((tag) => `<span class="tag">${tag}</span>`)
       .join("");
 
-    card.innerHTML = `
-      <div class="project-header">
-        <div>
-          <p class="project-kicker">${project.kicker}</p>
-          <h3 class="project-title">${project.name}</h3>
+    card.appendChild(buildProjectPreview(project, projectLinks.liveUrl));
+
+    card.insertAdjacentHTML(
+      "beforeend",
+      `
+        <div class="project-header">
+          <div>
+            <p class="project-kicker">${project.kicker}</p>
+            <h3 class="project-title">${project.name}</h3>
+          </div>
+          <div class="project-icon" aria-hidden="true">${project.icon}</div>
         </div>
-        <div class="project-icon" aria-hidden="true">${project.icon}</div>
-      </div>
-      <p class="project-summary">${project.summary}</p>
-      <div class="project-metadata">${tagItems}</div>
-      <ul class="project-details">${detailItems}</ul>
-      <div class="project-footer">
-        <div class="project-note">
-          <strong>${project.noteTitle}</strong>
-          <span>${project.note}</span>
+        <p class="project-summary">${project.summary}</p>
+        <div class="project-metadata">${tagItems}</div>
+        <ul class="project-details">${detailItems}</ul>
+        <div class="project-footer">
+          <div class="project-note">
+            <strong>${project.noteTitle}</strong>
+            <span>${project.note}</span>
+          </div>
+          <div class="project-links"></div>
         </div>
-        <div class="project-links"></div>
-      </div>
-    `;
+      `
+    );
 
     const linksContainer = card.querySelector(".project-links");
     linksContainer.append(
@@ -219,6 +277,7 @@ function fillFooterYear() {
 
 function initializePage() {
   renderProjects();
+  renderSignalGrid();
   applyConfiguredLinks();
   fillFooterYear();
   window.requestAnimationFrame(() => {
