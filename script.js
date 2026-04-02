@@ -73,6 +73,8 @@ const LAB_PROJECTS = [
     name: "Vitya's Life",
     kicker: "Személyes játékprojekt",
     icon: "VL",
+    iconSrc: "./assets/icons/vityas-life-favicon.png",
+    iconAlt: "Vitya's Life pixel favicon",
     accent: "#ffb66b",
     layout: "half",
     screenshotSrc: "./assets/screenshots/vityas-life.png",
@@ -198,6 +200,14 @@ function buildProjectPreview(project, liveUrl) {
   return preview;
 }
 
+function buildProjectIcon(project) {
+  if (project.iconSrc) {
+    return `<img src="${project.iconSrc}" alt="${project.iconAlt || ""}" loading="lazy">`;
+  }
+
+  return project.icon;
+}
+
 function renderProjects() {
   const container = document.getElementById("projects-grid");
   if (!container) {
@@ -231,6 +241,8 @@ function renderProjects() {
       .map((tag) => `<span class="tag">${tag}</span>`)
       .join("");
 
+    const iconAria = project.iconSrc ? "" : ' aria-hidden="true"';
+
     card.appendChild(buildProjectPreview(project, projectLinks.liveUrl));
 
     card.insertAdjacentHTML(
@@ -241,7 +253,7 @@ function renderProjects() {
             <p class="project-kicker">${project.kicker}</p>
             <h3 class="project-title">${project.name}</h3>
           </div>
-          <div class="project-icon" aria-hidden="true">${project.icon}</div>
+          <div class="project-icon"${iconAria}>${buildProjectIcon(project)}</div>
         </div>
         <p class="project-summary">${project.summary}</p>
         <div class="project-metadata">${tagItems}</div>
