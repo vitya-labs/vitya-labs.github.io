@@ -10,6 +10,10 @@ window.VITYA_LABS_CONFIG = {
       liveUrl: "http://159.69.33.67:3002/",
       repoUrl: "TODO_ADD_GRILLHUB_REPO_URL"
     },
+    cici: {
+      liveUrl: "http://159.69.33.67:3003/",
+      repoUrl: "TODO_ADD_CICI_REPO_URL"
+    },
     shopper24: {
       liveUrl: "http://159.69.33.67:8082/",
       repoUrl: "TODO_ADD_SHOPPER24_REPO_URL"

@@ -25,6 +25,31 @@ const LAB_PROJECTS = [
     secondaryLinkLabel: "Repository"
   },
   {
+    key: "cici",
+    name: "CICI",
+    kicker: "Consumption & Invoice Control Interface",
+    icon: "CICI",
+    iconSrc: "./assets/icons/cici-logo.png",
+    iconAlt: "CICI logo",
+    accent: "#0d6b9a",
+    layout: "half",
+    screenshotSrc: "./assets/screenshots/cici.png",
+    screenshotAlt: "CICI project screenshot",
+    summary:
+      "Háztartási fogyasztások és közüzemi számlák átlátható kezelésére épített felület, ahol az ingatlanok, mérőórák, leolvasások, becsült költségek és trendek egyetlen dashboardban találkoznak.",
+    details: [
+      "Property alapú nézet, külön kezelhető mérőórákkal és leolvasási előzményekkel.",
+      "Dashboard és insight felületek havi fogyasztás-, költség- és heti trendösszefoglalókkal.",
+      "Frontend, backend és MinIO tároló köré szervezett, több szolgáltatásos utility workflow."
+    ],
+    tags: ["Expo Web", "Spring Boot", "MinIO"],
+    noteTitle: "Fókusz",
+    note:
+      "A CICI ereje abban van, hogy a száraz utility adatokat is jól olvasható, nyugodt dashboard-élménnyé alakítja.",
+    primaryLinkLabel: "App megnyitása",
+    secondaryLinkLabel: "Repository"
+  },
+  {
     key: "energourmet",
     name: "EnerGourmet",
     kicker: "AI assisted energy drink sommelier",
