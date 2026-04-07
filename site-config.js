@@ -7,23 +7,23 @@ window.VITYA_LABS_CONFIG = {
   },
   projects: {
     grillhub: {
-      liveUrl: "http://159.69.33.67:3002/",
+      liveUrl: "https://grillhub.vityalabs.com/",
       repoUrl: "TODO_ADD_GRILLHUB_REPO_URL"
     },
     cici: {
-      liveUrl: "http://159.69.33.67:3003/",
+      liveUrl: "https://cici.vityalabs.com/",
       repoUrl: "TODO_ADD_CICI_REPO_URL"
     },
     shopper24: {
-      liveUrl: "http://159.69.33.67:8082/",
+      liveUrl: "https://shopper24.vityalabs.com/",
       repoUrl: "TODO_ADD_SHOPPER24_REPO_URL"
     },
     energourmet: {
-      liveUrl: "http://159.69.33.67:8083/",
+      liveUrl: "https://energourmet.vityalabs.com/",
       repoUrl: "TODO_ADD_ENERGOURMET_REPO_URL"
     },
     vityasLife: {
-      liveUrl: "http://159.69.33.67:8080/",
+      liveUrl: "https://vityas-life.vityalabs.com/",
       repoUrl: "https://github.com/vitya-labs/vityas-life"
     }
   }
