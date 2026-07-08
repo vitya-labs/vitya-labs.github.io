@@ -1,5 +1,30 @@
 const LAB_PROJECTS = [
   {
+    key: "home",
+    name: "HOME",
+    kicker: "Home Operations & Maintenance Engine",
+    icon: "H",
+    iconSrc: "./assets/icons/home-logo.png",
+    iconAlt: "HOME logo",
+    accent: "#e8835f",
+    layout: "featured",
+    screenshotSrc: "./assets/screenshots/home.png",
+    screenshotAlt: "HOME project screenshot",
+    summary:
+      "Multi-tenant háztartás-üzemeltető platform: ingatlanok, járművek, eszközök és előfizetések teljes életciklusa — karbantartás, mérőórák, költségek, emlékeztetők és dokumentumok egy közös rendszerben.",
+    details: [
+      "Háztartás-alapú multi-tenant modell meghívókkal és jogosultsági szintekkel, hogy egy család együtt vihesse a házat.",
+      "Karbantartási tervek, visszatérő költségek, mérőóra-leolvasások és időjárás-alapú javaslatok ütemezett jobokkal.",
+      "Dokumentumtár OCR-rel, naptár- és ICS-export, dashboard widgetekkel — Spring Boot + Next.js stackben."
+    ],
+    tags: ["Next.js 15", "Spring Boot 3", "PostgreSQL", "OCR"],
+    noteTitle: "Miért zászlóshajó?",
+    note:
+      "Ez a labor legkomplexebb rendszere: egy teljes SaaS, ami a háztartás működtetését kezeli end-to-end.",
+    primaryLinkLabel: "App megnyitása",
+    secondaryLinkLabel: "Repository"
+  },
+  {
     key: "grillhub",
     name: "GrillHub",
     kicker: "Közösségi BBQ platform",
@@ -119,7 +144,7 @@ const LAB_PROJECTS = [
     tags: ["Vanilla JS", "Puzzle game", "Static web"],
     noteTitle: "Miért más?",
     note:
-      "Ez a legszemélyesebb projekt a négy közül: nem utility, hanem játékos önportré webes formában.",
+      "Ez a legszemélyesebb projekt a labor csomagjából: nem utility, hanem játékos önportré webes formában.",
     primaryLinkLabel: "Játék indítása",
     secondaryLinkLabel: "Repository"
   }
