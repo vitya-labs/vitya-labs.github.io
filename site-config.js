@@ -7,8 +7,7 @@ window.VITYA_LABS_CONFIG = {
   },
   projects: {
     home: {
-      liveUrl: "https://home.vityalabs.com/",
-      repoUrl: "https://github.com/vitya-labs/HOME"
+      liveUrl: "https://home.vityalabs.com/"
     },
     grillhub: {
       liveUrl: "https://grillhub.vityalabs.com/",

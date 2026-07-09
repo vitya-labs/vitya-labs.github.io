@@ -675,6 +675,21 @@ button {
   border: 1px solid rgba(116, 117, 120, 0.14);
 }
 
+.project-links .project-link-private {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.8rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  background: rgba(35, 38, 41, 0.4);
+  border: 1px dashed rgba(116, 117, 120, 0.34);
+  color: var(--muted);
+  cursor: default;
+}
+
 .story-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);

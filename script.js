@@ -15,14 +15,16 @@ const LAB_PROJECTS = [
     details: [
       "Háztartás-alapú multi-tenant modell meghívókkal és jogosultsági szintekkel, hogy egy család együtt vihesse a házat.",
       "Karbantartási tervek, visszatérő költségek, mérőóra-leolvasások és időjárás-alapú javaslatok ütemezett jobokkal.",
-      "Dokumentumtár OCR-rel, naptár- és ICS-export, dashboard widgetekkel — Spring Boot + Next.js stackben."
+      "A webes app mellett Expo-alapú natív mobil app, így a háztartás zsebből is kezelhető.",
+      "Saját MCP szerver, amin keresztül AI asszisztensek is olvashatják és vezérelhetik a háztartást."
     ],
-    tags: ["Next.js 15", "Spring Boot 3", "PostgreSQL", "OCR"],
+    tags: ["Next.js 15", "Spring Boot 3", "Expo mobil app", "MCP szerver"],
     noteTitle: "Miért zászlóshajó?",
     note:
-      "Ez a labor legkomplexebb rendszere: egy teljes SaaS, ami a háztartás működtetését kezeli end-to-end.",
+      "Ez a labor legkomplexebb rendszere: egy teljes SaaS webbel, mobil appal és MCP szerverrel, ami a háztartás működtetését kezeli end-to-end.",
     primaryLinkLabel: "App megnyitása",
-    secondaryLinkLabel: "Repository"
+    secondaryLinkLabel: "Privát repository",
+    repoPrivate: true
   },
   {
     key: "grillhub",
@@ -196,6 +198,14 @@ function applyConfiguredLinks() {
   });
 }
 
+function buildPrivateRepoBadge(label) {
+  const badge = document.createElement("span");
+  badge.className = "project-link-private";
+  badge.textContent = label;
+  badge.setAttribute("title", "A forráskód privát repóban él");
+  return badge;
+}
+
 function buildProjectLink(url, label, className) {
   const anchor = document.createElement("a");
   anchor.className = className;
@@ -329,7 +339,9 @@ function renderProjects() {
     const linksContainer = card.querySelector(".project-links");
     linksContainer.append(
       buildProjectLink(projectLinks.liveUrl, project.primaryLinkLabel, "project-primary-link"),
-      buildProjectLink(projectLinks.repoUrl, project.secondaryLinkLabel, "project-secondary-link")
+      project.repoPrivate
+        ? buildPrivateRepoBadge(project.secondaryLinkLabel)
+        : buildProjectLink(projectLinks.repoUrl, project.secondaryLinkLabel, "project-secondary-link")
     );
 
     container.appendChild(card);
