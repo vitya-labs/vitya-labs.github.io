@@ -6,6 +6,9 @@ window.VITYA_LABS_CONFIG = {
     emailUrl: "mailto:markusviktor@gmail.com"
   },
   projects: {
+    home: {
+      liveUrl: "https://home.vityalabs.com/"
+    },
     grillhub: {
       liveUrl: "https://grillhub.vityalabs.com/",
       repoUrl: "TODO_ADD_GRILLHUB_REPO_URL"
