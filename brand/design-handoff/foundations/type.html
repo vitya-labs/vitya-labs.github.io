@@ -1,0 +1,47 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitya Labs — Type</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--background:#0c0e10;--text:#eeeef0;--muted:#aaabad;--primary:#ff914d}
+  *{box-sizing:border-box}
+  body{margin:0;padding:36px;font-family:"Manrope",sans-serif;color:var(--text);
+    background:radial-gradient(circle at top left,rgba(255,145,77,.14),transparent 30%),linear-gradient(180deg,#090a0b,var(--background) 30%,#090a0b)}
+  .eyebrow{font-family:"Space Grotesk",sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--primary);margin:0 0 22px}
+  .disp{font-family:"Space Grotesk",sans-serif}
+  .h1{font-size:clamp(3rem,8vw,5rem);line-height:.98;letter-spacing:-.04em;margin:0 0 6px}
+  .h2{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;margin:20px 0 6px}
+  .h3{font-size:1.5rem;letter-spacing:-.03em;margin:20px 0 6px}
+  .body{font-size:1rem;line-height:1.72;color:var(--muted);max-width:60ch;margin:8px 0 0}
+  .lbl{color:#6c6d70;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-family:"Space Grotesk",sans-serif}
+  .row{border-top:1px solid rgba(116,117,120,.16);padding-top:14px;margin-top:22px}
+</style>
+</head>
+<body>
+  <p class="eyebrow">Foundations · Type</p>
+  <div class="disp h1">Space Grotesk</div>
+  <span class="lbl">display · h1 · clamp(3–5.9rem) · tracking -0.04em</span>
+
+  <div class="row">
+    <div class="disp h2">Aktív projektek</div>
+    <span class="lbl">display · h2 · clamp(2.2–4rem) · tracking -0.03em</span>
+  </div>
+  <div class="row">
+    <div class="disp h3">Build fast, keep taste</div>
+    <span class="lbl">display · h3 · 1.5rem</span>
+  </div>
+  <div class="row">
+    <p class="eyebrow" style="margin:0">Independent software workshop</p>
+    <span class="lbl">display · eyebrow · 0.76rem · 700 · tracking 0.2em · uppercase · primary</span>
+  </div>
+  <div class="row">
+    <p class="body">A Vitya Labs egy személyes szoftver-műhely hasznos, néha furcsa, de mindig építésre kész projekteknek. Manrope, 1rem, line-height 1.72 — a törzsszöveg alaprétege.</p>
+    <span class="lbl">Manrope · body · 1rem · line 1.72</span>
+  </div>
+</body>
+</html>
