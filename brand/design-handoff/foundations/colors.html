@@ -1,0 +1,54 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitya Labs — Core palette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --background:#0c0e10;--surface:#111416;--surface-strong:#171a1c;--surface-high:#232629;
+    --text:#eeeef0;--muted:#aaabad;--outline:rgba(116,117,120,0.18);
+    --primary:#ff914d;--primary-deep:#f38239;--tertiary:#ffd176;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:32px;font-family:"Manrope",sans-serif;color:var(--text);
+    background:radial-gradient(circle at top left,rgba(255,145,77,.14),transparent 30%),
+      radial-gradient(circle at 85% 15%,rgba(255,209,118,.1),transparent 24%),
+      linear-gradient(180deg,#090a0b,var(--background) 30%,#090a0b);}
+  h2{font-family:"Space Grotesk",sans-serif;letter-spacing:-.03em;margin:0 0 4px}
+  .eyebrow{font-family:"Space Grotesk",sans-serif;font-size:.72rem;font-weight:700;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--primary);margin:0 0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .sw{border-radius:18px;overflow:hidden;border:1px solid var(--outline);background:var(--surface-strong)}
+  .chip{height:78px}
+  .meta{padding:10px 12px;font-size:.78rem}
+  .meta b{font-family:"Space Grotesk",sans-serif;display:block;letter-spacing:-.01em}
+  .meta span{color:var(--muted);font-variant-numeric:tabular-nums}
+  .section{margin-top:26px}
+</style>
+</head>
+<body>
+  <p class="eyebrow">Foundations · Color</p>
+  <h2>Core palette — warm-dark</h2>
+  <div class="section grid">
+    <div class="sw"><div class="chip" style="background:#0c0e10"></div><div class="meta"><b>background</b><span>#0c0e10</span></div></div>
+    <div class="sw"><div class="chip" style="background:#111416"></div><div class="meta"><b>surface</b><span>#111416</span></div></div>
+    <div class="sw"><div class="chip" style="background:#171a1c"></div><div class="meta"><b>surface-strong</b><span>#171a1c</span></div></div>
+    <div class="sw"><div class="chip" style="background:#232629"></div><div class="meta"><b>surface-high</b><span>#232629</span></div></div>
+    <div class="sw"><div class="chip" style="background:#eeeef0"></div><div class="meta"><b>text</b><span>#eeeef0</span></div></div>
+    <div class="sw"><div class="chip" style="background:#aaabad"></div><div class="meta"><b>muted</b><span>#aaabad</span></div></div>
+  </div>
+  <div class="section">
+    <p class="eyebrow" style="margin-bottom:12px">Brand signal</p>
+    <div class="grid">
+      <div class="sw"><div class="chip" style="background:#ff914d"></div><div class="meta"><b>primary</b><span>#ff914d</span></div></div>
+      <div class="sw"><div class="chip" style="background:#f38239"></div><div class="meta"><b>primary-deep</b><span>#f38239</span></div></div>
+      <div class="sw"><div class="chip" style="background:#ffd176"></div><div class="meta"><b>tertiary</b><span>#ffd176</span></div></div>
+      <div class="sw"><div class="chip" style="background:linear-gradient(135deg,#ff914d,#f38239)"></div><div class="meta"><b>primary gradient</b><span>135° primary→deep</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

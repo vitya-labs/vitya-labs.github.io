@@ -1,0 +1,98 @@
+{
+  "$meta": {
+    "name": "Vitya Labs Design Tokens (seed)",
+    "status": "seed — to be finalized by Claude Design",
+    "source": "extracted from vitya-labs.github.io/styles.css, grillhub tailwind.config.js, vityas-life",
+    "gaps_to_fill": [
+      "state colors (success/warning/danger/info)",
+      "explicit spacing scale",
+      "light-mode neutral ramp",
+      "form control tokens",
+      "focus / a11y ring",
+      "data-viz categorical + sequential palette"
+    ]
+  },
+  "color": {
+    "mode": {
+      "dark-warm": {
+        "background": "#0c0e10",
+        "surface": "#111416",
+        "surface-strong": "#171a1c",
+        "surface-high": "#232629",
+        "text": "#eeeef0",
+        "muted": "#aaabad",
+        "outline": "rgba(116,117,120,0.18)"
+      },
+      "light-cream": {
+        "_note": "from Vitya's Life — candidate light/playful mode, needs finalizing",
+        "background": "#fff5e4",
+        "surface": "#faf0dd",
+        "surface-strong": "#f1e7d3",
+        "surface-high": "#e7dcc5",
+        "text": "#332e23",
+        "muted": "#615b4e",
+        "line": "#7d7668"
+      }
+    },
+    "brand": {
+      "primary": "#ff914d",
+      "primary-deep": "#f38239",
+      "tertiary": "#ffd176"
+    },
+    "accent": {
+      "home": "#e8835f",
+      "grillhub": "#ff914d",
+      "cici": "#0d6b9a",
+      "energourmet": "#ffd176",
+      "shopper24": "#7ec8ff",
+      "vityas-life": "#ffb66b"
+    },
+    "playful": {
+      "yellow": "#fdd34d",
+      "green": "#91f78e",
+      "green-deep": "#006b1b",
+      "blue": "#70b5ff",
+      "blue-deep": "#005e9f"
+    },
+    "state": {
+      "_todo": "define success / warning / danger / info for both modes"
+    }
+  },
+  "font": {
+    "display": "\"Space Grotesk\", sans-serif",
+    "body": "\"Manrope\", sans-serif",
+    "playful-body": "\"Be Vietnam Pro\", sans-serif"
+  },
+  "type-scale": {
+    "eyebrow": { "font": "display", "size": "0.76rem", "weight": 700, "tracking": "0.20em", "transform": "uppercase" },
+    "h1": { "font": "display", "size": "clamp(3rem, 8vw, 5.9rem)", "line": 0.98, "tracking": "-0.04em" },
+    "h2": { "font": "display", "size": "clamp(2.2rem, 5vw, 4rem)", "tracking": "-0.03em" },
+    "h3": { "font": "display", "size": "1.5rem", "tracking": "-0.03em" },
+    "body": { "font": "body", "size": "1rem", "line": 1.72 },
+    "small": { "font": "body", "size": "0.88rem" }
+  },
+  "radius": { "sm": "18px", "md": "24px", "lg": "32px", "pill": "999px" },
+  "shadow": {
+    "card": "0 1px 3px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.08)",
+    "card-hover": "0 4px 12px rgba(0,0,0,0.1), 0 16px 40px rgba(0,0,0,0.12)",
+    "glow-amber": "0 0 20px rgba(245,158,11,0.4)",
+    "glow-orange": "0 0 20px rgba(249,115,22,0.4)",
+    "glow": "0 0 40px rgba(255,145,77,0.15)"
+  },
+  "gradient": {
+    "fire": "linear-gradient(135deg, #f97316 0%, #dc2626 50%, #b45309 100%)",
+    "warm": "linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fde68a 100%)",
+    "hero": "linear-gradient(160deg, #1c0a00 0%, #3d1a00 30%, #7c2d12 60%, #b45309 100%)",
+    "primary-button": "linear-gradient(135deg, var(--primary), var(--primary-deep))",
+    "card-surface": "linear-gradient(180deg, rgba(23,26,28,0.92), rgba(17,20,22,0.95))"
+  },
+  "motion": {
+    "reveal": "rise-in 700ms ease (translateY 26px -> 0, opacity 0 -> 1)",
+    "hover-lift": "translateY(-1px)",
+    "image-hover": "scale(1.02 - 1.04)",
+    "base-transition": "180ms ease",
+    "float": "3s ease-in-out infinite",
+    "glow-pulse": "2s ease-in-out infinite alternate"
+  },
+  "space": { "_todo": "define an explicit spacing scale (currently ad-hoc rem values)" }
+}
