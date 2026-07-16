@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Vitya Labs — Design System v1.0 · design tokens
+   Source of truth: brand/design-system/vitya-labs-design-system-v1.html
+   Warm-dark is the canonical mode (:root). Light mode via [data-theme="light"].
+   Prefix: --vl-*  (namespaced so it never clashes with app tokens)
+   ========================================================================== */
+
+:root {
+  /* --- neutrals · WARM-DARK (canonical) --- */
+  --vl-bg: #0c0e10;
+  --vl-surface: #111416;
+  --vl-surface-strong: #171a1c;
+  --vl-surface-high: #232629;
+  --vl-text: #eeeef0;
+  --vl-muted: #aaabad;
+  --vl-dim: #6c6d70;
+  --vl-outline: rgba(116, 117, 120, 0.18);
+  --vl-card-surface: linear-gradient(180deg, rgba(23, 26, 28, 0.92), rgba(17, 20, 22, 0.95));
+
+  /* --- brand signal (mode-independent) --- */
+  --vl-primary: #ff914d;
+  --vl-primary-deep: #f38239;
+  --vl-tertiary: #ffd176;         /* gold */
+  --vl-on-primary: #271200;       /* text on a primary fill */
+  --vl-primary-gradient: linear-gradient(135deg, #ff914d, #f38239);
+
+  /* --- state (base · on-strong-bg strong variant) --- */
+  --vl-success: #3fbf6f;  --vl-success-strong: #1f8f4e;
+  --vl-warning: #f0a63c;  --vl-warning-strong: #b5731a;
+  --vl-danger:  #f0555c;  --vl-danger-strong:  #cf3b42;
+  --vl-info:    #56a7e8;  --vl-info-strong:    #1f79c0;
+
+  /* --- per-project accents (set --vl-accent per app) --- */
+  --vl-accent-home: #e8835f;
+  --vl-accent-grillhub: #ff914d;
+  --vl-accent-cici: #0d6b9a;
+  --vl-accent-energourmet: #ffd176;
+  --vl-accent-shopper24: #7ec8ff;
+  --vl-accent-vityaslife: #ffb66b;
+  --vl-accent: var(--vl-primary);   /* default; override per project */
+
+  /* --- radius --- */
+  --vl-radius-sm: 18px;
+  --vl-radius-md: 24px;
+  --vl-radius-lg: 32px;
+  --vl-radius-pill: 999px;
+
+  /* --- elevation --- */
+  --vl-shadow-card: 0 1px 3px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.08);
+  --vl-shadow-card-hover: 0 4px 12px rgba(0,0,0,0.1), 0 16px 40px rgba(0,0,0,0.12);
+  --vl-glow: 0 0 40px rgba(255, 145, 77, 0.15);
+
+  /* --- type --- */
+  --vl-font-display: "Space Grotesk", sans-serif;  /* headings + every UI label */
+  --vl-font-body: "Manrope", sans-serif;           /* body copy */
+
+  /* --- motion --- */
+  --vl-transition: 180ms ease;
+  --vl-hover-lift: translateY(-1px);
+}
+
+/* --- LIGHT mode (opt-in; for utility dashboards / light surfaces) --- */
+:root[data-theme="light"],
+.vl-light {
+  --vl-bg: #f7f4ef;
+  --vl-surface: #ffffff;
+  --vl-surface-strong: #f0ece4;
+  --vl-surface-high: #e7e1d6;
+  --vl-text: #17191b;
+  --vl-muted: #6b6d70;
+  --vl-dim: #8a8478;
+  --vl-outline: rgba(51, 46, 35, 0.12);
+  --vl-card-surface: linear-gradient(180deg, #ffffff, #faf6ef);
+}
+
+/* --- base surface + reveal helpers (optional) --- */
+.vl-surface {
+  background:
+    radial-gradient(circle at top left, rgba(255,145,77,0.14), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(255,209,118,0.10), transparent 24%),
+    linear-gradient(180deg, #090a0b 0%, var(--vl-bg) 30%, #090a0b 100%);
+  color: var(--vl-text);
+  font-family: var(--vl-font-body);
+}
+:root[data-theme="light"] .vl-surface,
+.vl-light.vl-surface {
+  background:
+    radial-gradient(circle at top left, rgba(255,145,77,0.10), transparent 30%),
+    linear-gradient(180deg, #fffdf9 0%, var(--vl-bg) 30%);
+}
+
+@keyframes vl-rise-in { to { opacity: 1; transform: translateY(0); } }
+[data-vl-reveal] { opacity: 0; transform: translateY(26px); }
+.vl-ready [data-vl-reveal] { animation: vl-rise-in 700ms ease forwards; }
