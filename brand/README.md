@@ -8,7 +8,7 @@ Everything about the Vitya Labs brand lives here. The **source of truth** is
 | Path | What it is | Status |
 |---|---|---|
 | `design-system/` | **Finalized Design System v1.0** — canonical showcase, `tokens.css`, `tailwind-preset.js`. Start here. | ✅ current |
-| `vityalabs-brand-brief.md` | Phase-1 planning brief: the brand support points extracted from the flagship repos + the rationale/decisions handed to Claude Design. | 📄 record |
+| `archive/vityalabs-brand-brief.md` | Phase-1 planning brief (the "why"): support points extracted from the flagship repos + the decisions handed to Claude Design. All open questions are resolved in v1.0. | 🗄️ archive |
 
 ## How to apply the brand
 
@@ -21,7 +21,7 @@ Everything about the Vitya Labs brand lives here. The **source of truth** is
 
 ## How it was built
 
-1. **Support points** — extracted from the flagship repos → `vityalabs-brand-brief.md`.
+1. **Support points** — extracted from the flagship repos → `archive/vityalabs-brand-brief.md`.
 2. **Claude Design** — the brief was handed to claude.ai/design, which finalized the
    system (two-mode warm-dark + light, state colors, form controls, wordmark rules).
 3. **Design system + skill** — the output landed in `design-system/`, wrapped as a

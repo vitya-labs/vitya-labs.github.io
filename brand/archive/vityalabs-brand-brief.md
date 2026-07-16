@@ -1,5 +1,12 @@
 # Vitya Labs — Brand Brief (támpontok)
 
+> ⚠️ **ARCHÍV — phase-1 record.** Ez a tervezési dokumentum, nem a jelenlegi
+> spec. A benne nyitva hagyott kérdések **mind eldőltek a v1.0-ban**: a
+> mód-stratégia **kétmódú** (warm-dark + light) lett, a state színek / light mód /
+> form-elemek / wordmark szabály **pótolva**. A jelenlegi forrás:
+> [`../design-system/`](../design-system/). Ezt a fájlt a *miértért* (indoklás,
+> döntéstörténet) őrizzük.
+
 > **Mi ez a dokumentum?** A Vitya Labs brand *támpontjainak* összegyűjtése a flagship
 > repókból (gitops, homelab, vitya-labs.github.io, vityas-life, grillhub + a bennük
 > hivatkozott HOME, CICI, Shopper24, EnerGourmet). Ez a **1. fázis**: nyersanyag +
