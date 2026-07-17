@@ -13,9 +13,8 @@ window.VITYA_LABS_CONFIG = {
       liveUrl: "https://grillhub.vityalabs.com/",
       repoUrl: "TODO_ADD_GRILLHUB_REPO_URL"
     },
-    cici: {
-      liveUrl: "https://cici.vityalabs.com/",
-      repoUrl: "TODO_ADD_CICI_REPO_URL"
+    toto: {
+      liveUrl: "https://toto.vityalabs.com/"
     },
     shopper24: {
       liveUrl: "https://shopper24.vityalabs.com/",

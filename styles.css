@@ -554,6 +554,55 @@ button {
   letter-spacing: -0.03em;
 }
 
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+  padding: 0.32rem 0.7rem 0.32rem 0.62rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--project-accent, var(--primary)) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--project-accent, var(--primary)) 42%, transparent);
+  color: var(--project-accent, var(--primary));
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-status::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--project-accent, var(--primary));
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--project-accent, var(--primary)) 70%, transparent);
+  animation: project-status-pulse 2.4s ease-out infinite;
+}
+
+@keyframes project-status-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--project-accent, var(--primary)) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 0.5rem transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.project-card--active {
+  border-color: color-mix(in srgb, var(--project-accent, var(--primary)) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-status::before {
+    animation: none;
+  }
+}
+
 .project-icon {
   display: grid;
   place-items: center;

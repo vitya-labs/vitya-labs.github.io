@@ -8,6 +8,8 @@ const LAB_PROJECTS = [
     iconAlt: "HOME logo",
     accent: "#e8835f",
     layout: "featured",
+    active: true,
+    activeLabel: "Most ezen dolgozom",
     screenshotSrc: "./assets/screenshots/home.png",
     screenshotAlt: "HOME project screenshot",
     summary:
@@ -52,29 +54,30 @@ const LAB_PROJECTS = [
     secondaryLinkLabel: "Repository"
   },
   {
-    key: "cici",
-    name: "CICI",
-    kicker: "Consumption & Invoice Control Interface",
-    icon: "CICI",
-    iconSrc: "./assets/icons/cici-logo.png",
-    iconAlt: "CICI logo",
-    accent: "#0d6b9a",
+    key: "toto",
+    name: "TOTO",
+    kicker: "Track Others Together Outside",
+    icon: "TOTO",
+    iconSrc: "./assets/icons/toto-logo.png",
+    iconAlt: "TOTO logo",
+    accent: "#fd9000",
     layout: "half",
-    screenshotSrc: "./assets/screenshots/cici.png",
-    screenshotAlt: "CICI project screenshot",
+    screenshotSrc: "./assets/screenshots/toto.png",
+    screenshotAlt: "TOTO project screenshot",
     summary:
-      "Háztartási fogyasztások és közüzemi számlák átlátható kezelésére épített felület, ahol az ingatlanok, mérőórák, leolvasások, becsült költségek és trendek egyetlen dashboardban találkoznak.",
+      "Közösségi app elveszett és kóbor állatok gyors bejelentésére és megtalálására, valós idejű geolokációval — hogy az állatbarátok együtt segíthessenek egymásnak hazatalálni egy-egy kutyát vagy macskát.",
     details: [
-      "Property alapú nézet, külön kezelhető mérőórákkal és leolvasási előzményekkel.",
-      "Dashboard és insight felületek havi fogyasztás-, költség- és heti trendösszefoglalókkal.",
-      "Frontend, backend és MinIO tároló köré szervezett, több szolgáltatásos utility workflow."
+      "Térkép- és feed-nézet a közeli bejelentésekről, színkódolt pinekkel és Elveszett / Megtalált / Kóbor szűrőkkel.",
+      "Bejelentés fotóval, térképes helyjelöléssel, státusszal és a körülmények leírásával.",
+      "Profil statisztikákkal és gamifikációval, értesítési központ, kétnyelvű (magyar / angol) felület."
     ],
-    tags: ["Expo Web", "Spring Boot", "MinIO"],
-    noteTitle: "Fókusz",
+    tags: ["React Native / Expo", "Spring Boot", "PostgreSQL + MinIO"],
+    noteTitle: "Miért érdekes?",
     note:
-      "A CICI ereje abban van, hogy a száraz utility adatokat is jól olvasható, nyugodt dashboard-élménnyé alakítja.",
+      "Mobile-first közösségi mentőháló: a valós idejű helyadatot és a közösség erejét fordítja gyors, egyszerű állatkeresésbe.",
     primaryLinkLabel: "App megnyitása",
-    secondaryLinkLabel: "Repository"
+    secondaryLinkLabel: "Privát repository",
+    repoPrivate: true
   },
   {
     key: "energourmet",
@@ -311,6 +314,14 @@ function renderProjects() {
 
     const iconAria = project.iconSrc ? "" : ' aria-hidden="true"';
 
+    if (project.active) {
+      card.classList.add("project-card--active");
+    }
+
+    const activeBadge = project.active
+      ? `<span class="project-status" title="Jelenleg aktív fejlesztés alatt">${project.activeLabel || "Aktív fejlesztés"}</span>`
+      : "";
+
     card.appendChild(buildProjectPreview(project, projectLinks.liveUrl));
 
     card.insertAdjacentHTML(
@@ -320,6 +331,7 @@ function renderProjects() {
           <div>
             <p class="project-kicker">${project.kicker}</p>
             <h3 class="project-title">${project.name}</h3>
+            ${activeBadge}
           </div>
           <div class="project-icon"${iconAria}>${buildProjectIcon(project)}</div>
         </div>
