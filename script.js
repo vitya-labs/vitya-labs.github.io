@@ -22,7 +22,7 @@ const I18N = {
   en: {
     "meta.title": "Vitya Labs | Hobby projects, experiments and useful tools",
     "meta.description":
-      "Vitya Labs landing page for the HOME, GrillHub, TOTO, Shopper24, EnerGourmet and Vitya's Life projects.",
+      "Vitya Labs landing page for the HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet and Vitya's Life projects.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projects",
     "nav.about": "What is this",
@@ -32,7 +32,7 @@ const I18N = {
     "hero.eyebrow": "Independent software workshop",
     "hero.title": "A project lab for the ideas that refused to stay in draft.",
     "hero.text":
-      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a community app for organising cook-outs, a community app for reporting and finding lost animals, a shopping optimiser, an AI drink-pairing tool, and a game that processes my 2024–2025 self.",
+      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a community app for organising cook-outs, a CPM/Gantt construction scheduler, a community app for reporting and finding lost animals, a shopping optimiser, an AI drink-pairing tool, and a game that processes my 2024–2025 self.",
     "hero.ctaProjects": "Explore projects",
     "hero.ctaContact": "Get in touch",
     "hero.statsAria": "Vitya Labs quick overview",
@@ -51,14 +51,14 @@ const I18N = {
     "projects.title": "Active projects",
     "projects.subtitle":
       "These are Vitya Labs' current nodes: community apps, utilities, AI experiments and playful web projects.",
-    "projects.pill": "6 active nodes",
+    "projects.pill": "7 active nodes",
     "story.eyebrow": "Lab notes",
     "story.title":
       "Where a hobby project isn't a side quest, but a real prototype.",
     "story.p1":
       "Vitya Labs isn't about polishing a portfolio. It's more of a personal engineering lab where good ideas quickly get a working UI, a real workflow and a bit of character too.",
     "story.p2":
-      "The common thread is that each project starts from a concrete personal or community problem: seeing the household at a glance, organising a cook-out, finding lost animals with the community, wandering less in the store, picking a better energy drink for your food just for fun, or telling the story of a period through a game.",
+      "The common thread is that each project starts from a concrete personal or community problem: seeing the household at a glance, organising a cook-out, scheduling a construction project, finding lost animals with the community, wandering less in the store, picking a better energy drink for your food just for fun, or telling the story of a period through a game.",
     "story.card1.title": "Build fast, keep taste",
     "story.card1.body":
       "Speed matters, but the look and the vibe are part of the product too.",
@@ -99,7 +99,7 @@ const I18N = {
   hu: {
     "meta.title": "Vitya Labs | Hobbi projektek, kísérletek és hasznos eszközök",
     "meta.description":
-      "Vitya Labs landing oldal a HOME, GrillHub, TOTO, Shopper24, EnerGourmet és Vitya's Life projektekhez.",
+      "Vitya Labs landing oldal a HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet és Vitya's Life projektekhez.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projektek",
     "nav.about": "Mi ez",
@@ -110,7 +110,7 @@ const I18N = {
     "hero.title":
       "Projektlabor azoknak az ötleteknek, amik nem akartak draftban maradni.",
     "hero.text":
-      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, közös sütést szervező community app, elveszett és kóbor állatokat közösséggel megtaláló app, bevásárlás-optimalizáló eszköz, AI italpárosító, és egy játék is, ami a 2024-2025-ös énemet dolgozza fel.",
+      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, közös sütést szervező community app, CPM/Gantt építőipari ütemező, elveszett és kóbor állatokat közösséggel megtaláló app, bevásárlás-optimalizáló eszköz, AI italpárosító, és egy játék is, ami a 2024-2025-ös énemet dolgozza fel.",
     "hero.ctaProjects": "Projektjeink",
     "hero.ctaContact": "Kapcsolat",
     "hero.statsAria": "Vitya Labs gyors áttekintés",
@@ -129,14 +129,14 @@ const I18N = {
     "projects.title": "Aktív projektek",
     "projects.subtitle":
       "Ezek a Vitya Labs jelenlegi node-jai: közösségi appok, utilityk, AI kísérletek és játékos webes projektek.",
-    "projects.pill": "6 aktív node",
+    "projects.pill": "7 aktív node",
     "story.eyebrow": "Labor jegyzetek",
     "story.title":
       "Ahol a hobbi projekt nem side quest, hanem valódi prototípus.",
     "story.p1":
       "A Vitya Labs nem portfólió-polírozásra készült. Inkább egy saját mérnöklabor, ahol a jó ötletek gyorsan kapnak működő UI-t, valódi workflow-t és egy kis karaktert is.",
     "story.p2":
-      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul: a háztartás működését egyben látni, sütést szervezni, elveszett állatokat közösséggel megtalálni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, vagy játékon keresztül elmesélni egy időszakot.",
+      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul: a háztartás működését egyben látni, sütést szervezni, építkezést ütemezni, elveszett állatokat közösséggel megtalálni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, vagy játékon keresztül elmesélni egy időszakot.",
     "story.card1.title": "Építs gyorsan, de ízlésesen",
     "story.card1.body":
       "A gyorsaság fontos, de a megjelenés és a hangulat is része a terméknek.",
@@ -275,6 +275,47 @@ const LAB_PROJECTS = [
         note:
           "Ez a legerősebb közösségi projekt a csomagban: egy valódi social cooking platform irányába megy.",
         primaryLinkLabel: "Projekt megnyitása"
+      }
+    }
+  },
+  {
+    key: "halozo",
+    name: "Hálózó",
+    icon: "HÁ",
+    accent: "#2a75ba",
+    layout: "wide",
+    screenshotSrc: "./assets/screenshots/halozo.png",
+    screenshotAlt: "Hálózó project screenshot",
+    i18n: {
+      en: {
+        kicker: "CPM network & Gantt scheduler",
+        summary:
+          "A project-management tool for construction schedules: draw a CPM network diagram interactively and it generates a Gantt chart on the fly. Every edit re-runs the Critical Path Method, so the network and the Gantt stay in sync.",
+        details: [
+          "Interactive activity-on-node network editor (React Flow) with drag-to-connect dependencies and a red-highlighted critical path.",
+          "A full CPM engine: FS / SS / FF / SF dependencies with lag, forward + backward pass, total float and cycle detection.",
+          "Working-day calendar that skips weekends and holidays, per-project roles (owner / editor / viewer) and a companion Expo mobile app."
+        ],
+        tags: ["React 18 + Vite", "React Flow", "Spring Boot 3", "Expo mobile app"],
+        noteTitle: "Why interesting?",
+        note:
+          "The whole app is built around one live computation: change a task or a dependency and the critical path and Gantt recompute instantly.",
+        primaryLinkLabel: "Open app"
+      },
+      hu: {
+        kicker: "CPM hálódiagram és Gantt ütemező",
+        summary:
+          "Projektmenedzsment eszköz építőipari ütemezéshez: interaktívan rajzolsz egy CPM hálódiagramot, ő pedig menet közben Gantt-diagramot generál. Minden szerkesztésre újraszámol a kritikus út módszer, így a háló és a Gantt mindig szinkronban marad.",
+        details: [
+          "Interaktív tevékenység-csomópont hálószerkesztő (React Flow), húzással köthető függőségekkel és pirossal kiemelt kritikus úttal.",
+          "Teljes CPM motor: FS / SS / FF / SF függőségek késleltetéssel, oda- és visszaszámítás, teljes tartalék és körfüggőség-felismerés.",
+          "Munkanap-naptár, ami kihagyja a hétvégéket és ünnepnapokat, projektenkénti szerepkörök (tulaj / szerkesztő / néző) és Expo mobil app is."
+        ],
+        tags: ["React 18 + Vite", "React Flow", "Spring Boot 3", "Expo mobil app"],
+        noteTitle: "Miért érdekes?",
+        note:
+          "Az egész app egyetlen élő számítás köré épül: módosíts egy feladatot vagy függőséget, és a kritikus út meg a Gantt azonnal újraszámol.",
+        primaryLinkLabel: "App megnyitása"
       }
     }
   },
