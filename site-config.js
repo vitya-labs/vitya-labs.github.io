@@ -1,7 +1,4 @@
 window.VITYA_LABS_CONFIG = {
-  organization: {
-    githubUrl: "https://github.com/vitya-labs"
-  },
   contact: {
     emailUrl: "mailto:markusviktor@gmail.com"
   },
@@ -10,24 +7,19 @@ window.VITYA_LABS_CONFIG = {
       liveUrl: "https://home.vityalabs.com/"
     },
     grillhub: {
-      liveUrl: "https://grillhub.vityalabs.com/",
-      repoUrl: "TODO_ADD_GRILLHUB_REPO_URL"
+      liveUrl: "https://grillhub.vityalabs.com/"
     },
-    cici: {
-      liveUrl: "https://cici.vityalabs.com/",
-      repoUrl: "TODO_ADD_CICI_REPO_URL"
+    toto: {
+      liveUrl: "https://toto.vityalabs.com/"
     },
     shopper24: {
-      liveUrl: "https://shopper24.vityalabs.com/",
-      repoUrl: "TODO_ADD_SHOPPER24_REPO_URL"
+      liveUrl: "https://shopper24.vityalabs.com/"
     },
     energourmet: {
-      liveUrl: "https://energourmet.vityalabs.com/",
-      repoUrl: "TODO_ADD_ENERGOURMET_REPO_URL"
+      liveUrl: "https://energourmet.vityalabs.com/"
     },
     vityasLife: {
-      liveUrl: "https://vityas-life.vityalabs.com/",
-      repoUrl: "https://github.com/vitya-labs/vityas-life"
+      liveUrl: "https://vityas-life.vityalabs.com/"
     }
   }
 };
