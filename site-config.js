@@ -9,6 +9,9 @@ window.VITYA_LABS_CONFIG = {
     grillhub: {
       liveUrl: "https://grillhub.vityalabs.com/"
     },
+    halozo: {
+      liveUrl: "https://halozo.vityalabs.com/"
+    },
     toto: {
       liveUrl: "https://toto.vityalabs.com/"
     },
