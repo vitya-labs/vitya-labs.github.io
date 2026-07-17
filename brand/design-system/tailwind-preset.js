@@ -39,7 +39,7 @@ module.exports = {
         accent: {
           home: '#e8835f',
           grillhub: '#ff914d',
-          cici: '#0d6b9a',
+          toto: '#fd9000',
           energourmet: '#ffd176',
           shopper24: '#7ec8ff',
           vityaslife: '#ffb66b',

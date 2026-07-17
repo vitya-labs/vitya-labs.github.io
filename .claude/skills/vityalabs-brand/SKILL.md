@@ -3,7 +3,7 @@ name: vityalabs-brand
 description: >-
   Vitya Labs Design System v1.0 — the brand's canonical visual language. Use
   whenever building, styling, or restyling ANY UI inside the Vitya Labs brand:
-  the projects HOME, GrillHub, CICI, EnerGourmet, Shopper24, Vitya's Life, the
+  the projects HOME, GrillHub, TOTO, EnerGourmet, Shopper24, Vitya's Life, the
   vitya-labs.github.io landing, or anything served under vityalabs.com / the
   vitya-labs GitHub org. Apply this for any new page, component, screen, email,
   dashboard, or marketing surface that should look like Vitya Labs. Triggers:
@@ -37,7 +37,7 @@ Detect the stack and pull in the tokens **before** styling anything:
 
 | Stack | How to apply |
 |---|---|
-| **Tailwind** (React/Next/GrillHub/HOME) | Copy `tailwind-preset.js` into the repo, add to `presets: []`. Load fonts. Use `bg-vl-bg text-vl-text font-body`, `font-display`, `rounded-vl-pill`, `shadow-vl-glow`, `bg-vl-primary`, `text-accent-cici`, etc. |
+| **Tailwind** (React/Next/GrillHub/HOME) | Copy `tailwind-preset.js` into the repo, add to `presets: []`. Load fonts. Use `bg-vl-bg text-vl-text font-body`, `font-display`, `rounded-vl-pill`, `shadow-vl-glow`, `bg-vl-primary`, `text-accent-toto`, etc. |
 | **Static HTML / Flask (Jinja) / vanilla** | Copy `tokens.css` into the project (`brand.css`), link it, add class `vl-surface` to `<body>`. Use `var(--vl-primary)`, `var(--vl-radius-pill)`, `var(--vl-font-display)`… |
 | **Expo / React Native** | Mirror the token values into the RN theme object (same hex/rem values). |
 
@@ -55,7 +55,7 @@ Detect the stack and pull in the tokens **before** styling anything:
 - **Warm-dark is canonical** (`:root`) — near-black warm background, orange signal, glow.
   Use it for landing pages, community/marketing surfaces, and by default.
 - **Light mode** (`[data-theme="light"]` / `.vl-light`) — warm cream neutrals, for
-  utility dashboards (CICI-style) or when a light surface is required. Same brand
+  utility dashboards or when a light surface is required. Same brand
   signal, type, and shapes; only the neutrals change.
 
 Never introduce a cool-gray or pure-white-flat neutral ramp — the neutrals are
@@ -112,7 +112,7 @@ holds both warm and cool accents:
 |---|---|---|---|---|
 | HOME | `#e8835f` | | EnerGourmet | `#ffd176` |
 | GrillHub | `#ff914d` | | Shopper24 | `#7ec8ff` |
-| CICI | `#0d6b9a` | | Vitya's Life | `#ffb66b` |
+| TOTO | `#fd9000` | | Vitya's Life | `#ffb66b` |
 
 **Wordmark:** display name is **`Vitya Labs`** (lowercase `vitya labs` is fine as a
 wordmark). `vitya-labs` is the GitHub slug, `vityalabs` the domain/package — never
