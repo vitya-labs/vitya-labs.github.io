@@ -215,7 +215,7 @@ pill-forma mindkét módban közös brand-kapocs marad. A végső döntés a Cla
 
 ## 7. Logó / mark
 
-- **Org mark:** `assets/icons/vitya-logo.jpg` — kör alakú brand-markként használva (arany
+- **Org mark:** `assets/icons/vitya-logo.png` — kör alakú brand-markként használva (arany
   szegély, belső glow).
 - **Per-projekt logók:** `home-logo.png`, `grillhub-logo.png`, `cici-logo.png`,
   `shopper24-logo.png`, `vityas-life-favicon.png` (+ EnerGourmet: nincs kép, `EG` monogram).
