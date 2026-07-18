@@ -1,6 +1,6 @@
 window.VITYA_LABS_CONFIG = {
   contact: {
-    emailUrl: "mailto:markusviktor@gmail.com"
+    emailUrl: "mailto:hello@vityalabs.com"
   },
   projects: {
     home: {
