@@ -508,7 +508,7 @@ button {
 }
 
 .project-card--featured {
-  grid-column: span 6;
+  grid-column: span 12;
   min-height: 31rem;
   padding: 2rem;
 }
