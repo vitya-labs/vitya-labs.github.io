@@ -242,7 +242,7 @@ const LAB_PROJECTS = [
     iconSrc: "./assets/icons/grillhub-logo.png",
     iconAlt: "GrillHub logo",
     accent: "#ff914d",
-    layout: "featured",
+    layout: "half",
     screenshotSrc: "./assets/screenshots/grillhub.png",
     screenshotAlt: "GrillHub project screenshot",
     i18n: {
@@ -283,7 +283,7 @@ const LAB_PROJECTS = [
     name: "Hálózó",
     icon: "HÁ",
     accent: "#2a75ba",
-    layout: "wide",
+    layout: "half",
     screenshotSrc: "./assets/screenshots/halozo.png",
     screenshotAlt: "Hálózó project screenshot",
     i18n: {
