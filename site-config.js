@@ -22,7 +22,10 @@ window.VITYA_LABS_CONFIG = {
       liveUrl: "https://energourmet.vityalabs.com/"
     },
     vityasLife: {
-      liveUrl: "https://vityas-life.vityalabs.com/"
+      liveUrl: "https://vityalabs.itch.io/vitya-life"
+    },
+    usageLimit: {
+      liveUrl: "https://vityalabs.itch.io/usage-limit-reached"
     }
   }
 };

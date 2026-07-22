@@ -22,7 +22,7 @@ const I18N = {
   en: {
     "meta.title": "Vitya Labs | Hobby projects, experiments and useful tools",
     "meta.description":
-      "Vitya Labs landing page for the HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet and Vitya's Life projects.",
+      "Vitya Labs landing page for the HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life and Usage Limit Reached projects.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projects",
     "nav.about": "What is this",
@@ -32,7 +32,7 @@ const I18N = {
     "hero.eyebrow": "Independent software workshop",
     "hero.title": "A project lab for the ideas that refused to stay in draft.",
     "hero.text":
-      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a community app for organising cook-outs, a CPM/Gantt construction scheduler, a community app for reporting and finding lost animals, a shopping optimiser, an AI drink-pairing tool, and a game that processes my 2024–2025 self.",
+      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a community app for organising cook-outs, a CPM/Gantt construction scheduler, a community app for reporting and finding lost animals, a shopping optimiser, an AI drink-pairing tool, a game that processes my 2024–2025 self, and a pixel-octopus runner for the \"usage limit reached\" wait.",
     "hero.ctaProjects": "Explore projects",
     "hero.ctaContact": "Get in touch",
     "hero.statsAria": "Vitya Labs quick overview",
@@ -51,14 +51,14 @@ const I18N = {
     "projects.title": "Active projects",
     "projects.subtitle":
       "These are Vitya Labs' current nodes: community apps, utilities, AI experiments and playful web projects.",
-    "projects.pill": "7 active nodes",
+    "projects.pill": "8 active nodes",
     "story.eyebrow": "Lab notes",
     "story.title":
       "Where a hobby project isn't a side quest, but a real prototype.",
     "story.p1":
       "Vitya Labs isn't about polishing a portfolio. It's more of a personal engineering lab where good ideas quickly get a working UI, a real workflow and a bit of character too.",
     "story.p2":
-      "The common thread is that each project starts from a concrete personal or community problem: seeing the household at a glance, organising a cook-out, scheduling a construction project, finding lost animals with the community, wandering less in the store, picking a better energy drink for your food just for fun, or telling the story of a period through a game.",
+      "The common thread is that each project starts from a concrete personal or community problem: seeing the household at a glance, organising a cook-out, scheduling a construction project, finding lost animals with the community, wandering less in the store, picking a better energy drink for your food just for fun, telling the story of a period through a game, or turning an out-of-quota wait into a quick pixel run.",
     "story.card1.title": "Build fast, keep taste",
     "story.card1.body":
       "Speed matters, but the look and the vibe are part of the product too.",
@@ -99,7 +99,7 @@ const I18N = {
   hu: {
     "meta.title": "Vitya Labs | Hobbi projektek, kísérletek és hasznos eszközök",
     "meta.description":
-      "Vitya Labs landing oldal a HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet és Vitya's Life projektekhez.",
+      "Vitya Labs landing oldal a HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life és Usage Limit Reached projektekhez.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projektek",
     "nav.about": "Mi ez",
@@ -110,7 +110,7 @@ const I18N = {
     "hero.title":
       "Projektlabor azoknak az ötleteknek, amik nem akartak draftban maradni.",
     "hero.text":
-      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, közös sütést szervező community app, CPM/Gantt építőipari ütemező, elveszett és kóbor állatokat közösséggel megtaláló app, bevásárlás-optimalizáló eszköz, AI italpárosító, és egy játék is, ami a 2024-2025-ös énemet dolgozza fel.",
+      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, közös sütést szervező community app, CPM/Gantt építőipari ütemező, elveszett és kóbor állatokat közösséggel megtaláló app, bevásárlás-optimalizáló eszköz, AI italpárosító, egy játék, ami a 2024-2025-ös énemet dolgozza fel, és egy pixel-polip runner az „usage limit reached\" várakozásra.",
     "hero.ctaProjects": "Projektjeink",
     "hero.ctaContact": "Kapcsolat",
     "hero.statsAria": "Vitya Labs gyors áttekintés",
@@ -129,14 +129,14 @@ const I18N = {
     "projects.title": "Aktív projektek",
     "projects.subtitle":
       "Ezek a Vitya Labs jelenlegi node-jai: közösségi appok, utilityk, AI kísérletek és játékos webes projektek.",
-    "projects.pill": "7 aktív node",
+    "projects.pill": "8 aktív node",
     "story.eyebrow": "Labor jegyzetek",
     "story.title":
       "Ahol a hobbi projekt nem side quest, hanem valódi prototípus.",
     "story.p1":
       "A Vitya Labs nem portfólió-polírozásra készült. Inkább egy saját mérnöklabor, ahol a jó ötletek gyorsan kapnak működő UI-t, valódi workflow-t és egy kis karaktert is.",
     "story.p2":
-      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul: a háztartás működését egyben látni, sütést szervezni, építkezést ütemezni, elveszett állatokat közösséggel megtalálni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, vagy játékon keresztül elmesélni egy időszakot.",
+      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul: a háztartás működését egyben látni, sütést szervezni, építkezést ütemezni, elveszett állatokat közösséggel megtalálni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, játékon keresztül elmesélni egy időszakot, vagy egy kvóta-várakozást gyors pixeles futássá alakítani.",
     "story.card1.title": "Építs gyorsan, de ízlésesen",
     "story.card1.body":
       "A gyorsaság fontos, de a megjelenés és a hangulat is része a terméknek.",
@@ -463,30 +463,74 @@ const LAB_PROJECTS = [
         summary:
           "A browser-based, sokoban-style puzzle game with an office vibe that turns my 2024–2025 self — its routines, focuses and inside jokes — into playful levels.",
         details: [
-          "A static web build with fast startup and easy deploy.",
-          "Keyboard controls, undo, reset and a hint system for the puzzle loop.",
+          "Six hand-built office shifts: push every labeled folder crate onto a glowing tray.",
+          "No undo and no reset — every shove is final, so a wedged crate means starting the career over.",
           "Because of the personal theme it's both a game and a snapshot of an era."
         ],
-        tags: ["Vanilla JS", "Puzzle game", "Static web"],
+        tags: ["Vanilla JS", "Puzzle game", "itch.io"],
         noteTitle: "Why different?",
         note:
           "It's the most personal project in the lab's bundle: not a utility, but a playful self-portrait in web form.",
-        primaryLinkLabel: "Launch game"
+        primaryLinkLabel: "Play on itch.io"
       },
       hu: {
         kicker: "Személyes játékprojekt",
         summary:
           "Böngészős, sokoban-jellegű puzzle játék irodai hangulattal, amely a 2024-2025-ös énemet és annak rutinjait, fókuszait és belső poénjait fordítja át játékos pályákra.",
         details: [
-          "Statikus webes build, gyors indulással és könnyű deployjal.",
-          "Billentyűs irányítás, undo, reset és hint rendszer a puzzle loophoz.",
+          "Hat kézzel épített irodai műszak: told minden feliratozott dossziét egy világító tálcára.",
+          "Nincs undo és nincs reset — minden tolás végleges, egy beszorult láda az egész karriert újraindítja.",
           "A személyes tematika miatt egyszerre játék és korszaklenyomat."
         ],
-        tags: ["Vanilla JS", "Puzzle játék", "Statikus web"],
+        tags: ["Vanilla JS", "Puzzle játék", "itch.io"],
         noteTitle: "Miért más?",
         note:
           "Ez a legszemélyesebb projekt a labor csomagjából: nem utility, hanem játékos önportré webes formában.",
-        primaryLinkLabel: "Játék indítása"
+        primaryLinkLabel: "Játszd itch.io-n"
+      }
+    }
+  },
+  {
+    key: "usageLimit",
+    name: "Usage Limit Reached",
+    icon: "UL",
+    iconSrc: "./assets/icons/usage-limit-favicon.png",
+    iconAlt: "Usage Limit Reached pixel octopus",
+    iconRendering: "pixelated",
+    accent: "#e56e3c",
+    layout: "half",
+    screenshotSrc: "./assets/screenshots/usage-limit-reached.png",
+    screenshotAlt: "Usage Limit Reached project screenshot",
+    i18n: {
+      en: {
+        kicker: "Pixel Octopus endless runner",
+        summary:
+          "A Chrome-\"no internet\" dino game reimagined for the out-of-quota wait: a pixel octopus runs, code blocks stand in for the cacti and bugs replace the birds — all on a playful \"Usage limit reached\" screen.",
+        details: [
+          "A single self-contained index.html with no dependencies — it runs offline and drops in anywhere.",
+          "Speed ramps up, day/night flips every 500 points, and the high score is kept in localStorage.",
+          "A fan-made parody of that out-of-quota feeling — no brand assets used, just the joke."
+        ],
+        tags: ["Vanilla JS", "Endless runner", "itch.io"],
+        noteTitle: "Character",
+        note:
+          "The lab's smallest build: one HTML file that turns waiting for a reset into a quick pixel-art run.",
+        primaryLinkLabel: "Play on itch.io"
+      },
+      hu: {
+        kicker: "Pixel Octopus végtelen runner",
+        summary:
+          "A Chrome \"nincs internet\" dínó játéka újragondolva a kvóta-várakozásra: egy pixel polip fut, kódblokkok helyettesítik a kaktuszokat és bugok a madarakat — egy játékos \"Usage limit reached\" képernyőn.",
+        details: [
+          "Egyetlen önálló index.html, függőségek nélkül — offline is fut és bárhová bemásolható.",
+          "A sebesség folyamatosan gyorsul, 500 pontonként vált a nappal/éjszaka, a legjobb pontszám a localStorage-ben marad.",
+          "Fan-made paródia a kvóta-elfogyás érzéséről — semmilyen márkaelem, csak a poén."
+        ],
+        tags: ["Vanilla JS", "Végtelen runner", "itch.io"],
+        noteTitle: "Karakter",
+        note:
+          "A labor legkisebb buildje: egyetlen HTML fájl, ami a resetre várást gyors pixeles futássá alakítja.",
+        primaryLinkLabel: "Játszd itch.io-n"
       }
     }
   }
