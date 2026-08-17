@@ -400,6 +400,11 @@ button {
   transition: transform 240ms ease;
 }
 
+.signal-tile[data-project-key="hotdogRunner"] img,
+#project-hotdogRunner .project-media img {
+  object-position: left center;
+}
+
 .signal-tile:hover img {
   transform: scale(1.04);
 }
@@ -638,6 +643,11 @@ button {
   border-color: color-mix(in srgb, var(--project-accent, var(--primary)) 45%, transparent);
 }
 
+.project-status--available::before {
+  animation: none;
+  box-shadow: 0 0 0 0.22rem color-mix(in srgb, var(--project-accent, var(--primary)) 18%, transparent);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-status::before {
     animation: none;
@@ -662,6 +672,7 @@ button {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
+  border-radius: 0.52rem;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.22));
 }
 

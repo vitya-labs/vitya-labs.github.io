@@ -6,6 +6,10 @@ window.VITYA_LABS_CONFIG = {
     home: {
       liveUrl: "https://home.vityalabs.com/"
     },
+    hotdogRunner: {
+      liveUrl: "https://apps.apple.com/hu/app/hotdog-runner/id6794843699?l=hu",
+      infoUrl: "./hotdog-runner/"
+    },
     grillhub: {
       liveUrl: "https://grillhub.vityalabs.com/"
     },

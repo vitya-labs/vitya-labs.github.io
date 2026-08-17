@@ -22,7 +22,7 @@ const I18N = {
   en: {
     "meta.title": "Vitya Labs | Hobby projects, experiments and useful tools",
     "meta.description":
-      "Vitya Labs landing page for the HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life and Usage Limit Reached projects.",
+      "Vitya Labs landing page for the HOME, Hotdog Runner, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life and Usage Limit Reached projects.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projects",
     "nav.about": "What is this",
@@ -32,7 +32,7 @@ const I18N = {
     "hero.eyebrow": "Independent software workshop",
     "hero.title": "A project lab for the ideas that refused to stay in draft.",
     "hero.text":
-      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a community app for organising cook-outs, a CPM/Gantt construction scheduler, a community app for reporting and finding lost animals, a shopping optimiser, an AI drink-pairing tool, a game that processes my 2024–2025 self, and a pixel-octopus runner for the \"usage limit reached\" wait.",
+      "Vitya Labs is a personal organisation for useful, sometimes strange, but always build-ready projects. Among them: a full home-operations platform, a released iPhone and iPad game about a runaway hotdog, community apps, a construction scheduler, a shopping optimiser, AI experiments and playful browser games.",
     "hero.ctaProjects": "Explore projects",
     "hero.ctaContact": "Get in touch",
     "hero.statsAria": "Vitya Labs quick overview",
@@ -51,14 +51,14 @@ const I18N = {
     "projects.title": "Active projects",
     "projects.subtitle":
       "These are Vitya Labs' current nodes: community apps, utilities, AI experiments and playful web projects.",
-    "projects.pill": "8 active nodes",
+    "projects.pill": "9 active nodes",
     "story.eyebrow": "Lab notes",
     "story.title":
       "Where a hobby project isn't a side quest, but a real prototype.",
     "story.p1":
       "Vitya Labs isn't about polishing a portfolio. It's more of a personal engineering lab where good ideas quickly get a working UI, a real workflow and a bit of character too.",
     "story.p2":
-      "The common thread is that each project starts from a concrete personal or community problem: seeing the household at a glance, organising a cook-out, scheduling a construction project, finding lost animals with the community, wandering less in the store, picking a better energy drink for your food just for fun, telling the story of a period through a game, or turning an out-of-quota wait into a quick pixel run.",
+      "The common thread is that each project starts from a concrete personal idea or community problem: seeing the household at a glance, escaping flaming grills as a tiny hotdog, organising a cook-out, scheduling a construction project, finding lost animals together, wandering less in the store, pairing food with energy drinks, or turning a wait into a quick pixel run.",
     "story.card1.title": "Build fast, keep taste",
     "story.card1.body":
       "Speed matters, but the look and the vibe are part of the product too.",
@@ -99,7 +99,7 @@ const I18N = {
   hu: {
     "meta.title": "Vitya Labs | Hobbi projektek, kísérletek és hasznos eszközök",
     "meta.description":
-      "Vitya Labs landing oldal a HOME, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life és Usage Limit Reached projektekhez.",
+      "Vitya Labs landing oldal a HOME, Hotdog Runner, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet, Vitya's Life és Usage Limit Reached projektekhez.",
     "brand.tagline": "maker lab / playground",
     "nav.projects": "Projektek",
     "nav.about": "Mi ez",
@@ -110,7 +110,7 @@ const I18N = {
     "hero.title":
       "Projektlabor azoknak az ötleteknek, amik nem akartak draftban maradni.",
     "hero.text":
-      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, közös sütést szervező community app, CPM/Gantt építőipari ütemező, elveszett és kóbor állatokat közösséggel megtaláló app, bevásárlás-optimalizáló eszköz, AI italpárosító, egy játék, ami a 2024-2025-ös énemet dolgozza fel, és egy pixel-polip runner az „usage limit reached\" várakozásra.",
+      "A Vitya Labs egy személyes szervezet hasznos, néha furcsa, de mindig építésre kész projekteknek. Köztük van egy teljes háztartás-üzemeltető platform, egy már kiadott iPhone- és iPad-játék egy menekülő hotdoggal, közösségi appok, építőipari ütemező, bevásárlás-optimalizáló, AI-kísérletek és játékos böngészős projektek.",
     "hero.ctaProjects": "Projektjeink",
     "hero.ctaContact": "Kapcsolat",
     "hero.statsAria": "Vitya Labs gyors áttekintés",
@@ -129,14 +129,14 @@ const I18N = {
     "projects.title": "Aktív projektek",
     "projects.subtitle":
       "Ezek a Vitya Labs jelenlegi node-jai: közösségi appok, utilityk, AI kísérletek és játékos webes projektek.",
-    "projects.pill": "8 aktív node",
+    "projects.pill": "9 aktív node",
     "story.eyebrow": "Labor jegyzetek",
     "story.title":
       "Ahol a hobbi projekt nem side quest, hanem valódi prototípus.",
     "story.p1":
       "A Vitya Labs nem portfólió-polírozásra készült. Inkább egy saját mérnöklabor, ahol a jó ötletek gyorsan kapnak működő UI-t, valódi workflow-t és egy kis karaktert is.",
     "story.p2":
-      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes vagy közösségi problémából indul: a háztartás működését egyben látni, sütést szervezni, építkezést ütemezni, elveszett állatokat közösséggel megtalálni, boltban kevesebbet keringeni, ételhez funból jobb energiaitalt választani, játékon keresztül elmesélni egy időszakot, vagy egy kvóta-várakozást gyors pixeles futássá alakítani.",
+      "A közös nevező az, hogy mindegyik projekt egy konkrét személyes ötletből vagy közösségi problémából indul: a háztartás működését egyben látni, apró hotdogként lángoló grillek elől menekülni, sütést szervezni, építkezést ütemezni, elveszett állatokat együtt megtalálni, boltban kevesebbet keringeni, ételhez energiaitalt párosítani, vagy egy várakozást gyors pixeles futássá alakítani.",
     "story.card1.title": "Építs gyorsan, de ízlésesen",
     "story.card1.body":
       "A gyorsaság fontos, de a megjelenés és a hangulat is része a terméknek.",
@@ -232,6 +232,54 @@ const LAB_PROJECTS = [
         note:
           "Ez a labor legkomplexebb rendszere: egy teljes SaaS webbel, mobil appal és MCP szerverrel, ami a háztartás működtetését kezeli end-to-end.",
         primaryLinkLabel: "App megnyitása"
+      }
+    }
+  },
+  {
+    key: "hotdogRunner",
+    name: "Hotdog Runner",
+    icon: "HR",
+    iconSrc: "./hotdog-runner/assets/icon.png",
+    iconAlt: "Hotdog Runner app icon",
+    accent: "#ff914d",
+    layout: "half",
+    available: true,
+    screenshotSrc: "./hotdog-runner/assets/gameplay-day.png",
+    screenshotAlt: "Hotdog Runner daytime gameplay on iPhone and iPad",
+    i18n: {
+      en: {
+        kicker: "Released iOS endless runner",
+        availableLabel: "Available on the App Store",
+        summary:
+          "A pixel-art endless runner for iPhone and iPad starring one tiny hotdog with a very clear objective: jump the flaming grills, duck the diving seagulls and do not become dinner.",
+        details: [
+          "One-touch landscape controls: tap the right side to jump and hold the left side to duck.",
+          "The pace climbs as the garden fades from a bright afternoon into a moonlit night.",
+          "No ads, no accounts and no internet connection required — the high score stays on the device."
+        ],
+        tags: ["iPhone + iPad", "Capacitor", "Offline game"],
+        noteTitle: "Now running",
+        note:
+          "The lab's first App Store release is now available as a focused pixel-art game for iPhone and iPad.",
+        primaryLinkLabel: "Download on the App Store",
+        secondaryLinkLabel: "Game details"
+      },
+      hu: {
+        kicker: "Megjelent iOS endless runner",
+        availableLabel: "Elérhető az App Store-ban",
+        summary:
+          "Pixeles endless runner iPhone-ra és iPadre egy apró hotdoggal, akinek egyértelmű a célja: ugord át a lángoló grilleket, bukj le a sirályok elől, és ne válj vacsorává.",
+        details: [
+          "Egyszerű fekvő nézetes irányítás: jobb oldali érintésre ugrás, a bal oldalt nyomva tartva bukás.",
+          "A tempó folyamatosan nő, miközben a kert a fényes délutánból holdfényes éjszakába vált.",
+          "Nincs reklám, nincs fiók és internet sem kell hozzá — a rekord az eszközön marad."
+        ],
+        tags: ["iPhone + iPad", "Capacitor", "Offline játék"],
+        noteTitle: "Már fut",
+        note:
+          "A labor első App Store-megjelenése egy fókuszált pixel-art játék iPhone-ra és iPadre, amely már letölthető.",
+        primaryLinkLabel: "Letöltés az App Store-ból",
+        secondaryLinkLabel: "Játék részletei"
       }
     }
   },
@@ -627,6 +675,7 @@ function renderSignalGrid() {
   LAB_PROJECTS.forEach((project) => {
     const tile = document.createElement("a");
     tile.className = "signal-tile";
+    tile.dataset.projectKey = project.key;
     tile.href = `#project-${project.key}`;
     tile.setAttribute("aria-label", `${project.name} details`);
     tile.style.setProperty("--project-accent", project.accent);
@@ -706,9 +755,11 @@ function renderProjects() {
 
     const iconAria = project.iconSrc ? "" : ' aria-hidden="true"';
 
-    const activeBadge = project.active
+    const statusBadge = project.active
       ? `<span class="project-status">${copy.activeLabel || ""}</span>`
-      : "";
+      : project.available
+        ? `<span class="project-status project-status--available">${copy.availableLabel || ""}</span>`
+        : "";
 
     card.appendChild(buildProjectPreview(project, projectLinks.liveUrl));
 
@@ -719,7 +770,7 @@ function renderProjects() {
           <div>
             <p class="project-kicker">${copy.kicker}</p>
             <h3 class="project-title">${project.name}</h3>
-            ${activeBadge}
+            ${statusBadge}
           </div>
           <div class="project-icon"${iconAria}>${buildProjectIcon(project)}</div>
         </div>
@@ -740,6 +791,11 @@ function renderProjects() {
     linksContainer.append(
       buildProjectLink(projectLinks.liveUrl, copy.primaryLinkLabel, "project-primary-link")
     );
+    if (isConfiguredUrl(projectLinks.infoUrl) && copy.secondaryLinkLabel) {
+      linksContainer.append(
+        buildProjectLink(projectLinks.infoUrl, copy.secondaryLinkLabel, "project-secondary-link")
+      );
+    }
 
     container.appendChild(card);
   });
