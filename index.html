@@ -1,236 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vitya Labs | Hobby projects, experiments and useful tools</title>
-  <meta
-    name="description"
-    content="Vitya Labs landing page for the HOME, Hotdog Runner, GrillHub, Hálózó, TOTO, Shopper24, EnerGourmet and Vitya's Life projects."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="icon" type="image/png" href="assets/icons/vitya-logo.png">
-  <link rel="apple-touch-icon" href="assets/icons/vitya-logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vitya Labs — experimental apps, utilities and playful prototypes.">
+  <meta name="theme-color" content="#080a0c">
+  <title>Vitya Labs — Experiments worth building</title>
+  <link rel="icon" type="image/png" href="./assets/icons/vitya-logo.png">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <div class="page-shell">
-    <div class="ambient ambient-one"></div>
-    <div class="ambient ambient-two"></div>
+<body
+  data-brand="labs"
+  data-title-en="Vitya Labs — Experiments worth building"
+  data-title-hu="Vitya Labs — Kísérletek, amelyeket érdemes megépíteni"
+  data-description-en="Vitya Labs — experimental apps, utilities and playful prototypes."
+  data-description-hu="Vitya Labs — kísérleti appok, eszközök és játékos prototípusok."
+>
+  <header class="topbar shell">
+    <a class="brand" href="#top" aria-label="Vitya Labs home"><span class="brand-badge brand-badge-logo"><img src="./assets/icons/vitya-logo_big.jpg" alt=""></span><span class="brand-copy"><strong>Vitya Labs</strong><span>experiment / prototype</span></span></a>
+    <nav class="topnav" aria-label="Primary navigation"><a href="#projects" data-en="Projects" data-hu="Projektek">Projects</a><a href="#principles" data-en="Lab rules" data-hu="Labor-szabályok">Lab rules</a><a href="https://markusviktor.github.io/" data-en="All collections" data-hu="Minden gyűjtemény">All collections</a></nav>
+    <div class="header-actions"><div class="lang-switch" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="hu">HU</button></div><a class="button button-secondary button-small" href="#projects" data-en="Open the lab" data-hu="Labor megnyitása">Open the lab</a></div>
+  </header>
 
-    <header class="topbar">
-      <a class="brand" href="#hero" aria-label="Vitya Labs">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="assets/icons/vitya-logo_big.jpg" alt="" loading="eager">
-        </span>
-        <span class="brand-copy">
-          <strong>Vitya Labs</strong>
-          <span data-i18n="brand.tagline">maker lab / playground</span>
-        </span>
-      </a>
+  <main id="top">
+    <section class="hero shell">
+      <div><p class="eyebrow" data-en="Independent project laboratory" data-hu="Független projektlabor">Independent project laboratory</p><h1 data-en="Ideas get working versions here." data-hu="Itt az ötletek működő verziót kapnak.">Ideas get working versions here.</h1><p class="hero-lead" data-en="Vitya Labs is the shelf for useful experiments: community concepts, visual tools and AI-assisted oddities that were too interesting to leave as notes." data-hu="A Vitya Labs a hasznos kísérletek polca: közösségi koncepciók, vizuális eszközök és AI-val támogatott furcsaságok, amelyek túl érdekesek voltak ahhoz, hogy jegyzetek maradjanak.">Vitya Labs is the shelf for useful experiments: community concepts, visual tools and AI-assisted oddities that were too interesting to leave as notes.</p><div class="hero-actions"><a class="button button-primary" href="#projects" data-en="Explore five experiments" data-hu="Öt kísérlet megnyitása">Explore five experiments</a><a class="button button-secondary" href="https://markusviktor.github.io/" data-en="Back to Markus Viktor" data-hu="Vissza Markus Viktorhoz">Back to Markus Viktor</a></div></div>
+      <aside class="hero-panel"><div class="panel-top"><span>LAB / 05</span><span data-en="Curiosity in production" data-hu="Kíváncsiság működés közben">Curiosity in production</span></div><img class="panel-logo panel-logo--portrait" src="./assets/icons/vitya-logo_big.jpg" alt="Vitya Labs logo"><div class="panel-note"><strong data-en="Prototype with intent." data-hu="Szándékos prototípus.">Prototype with intent.</strong><span data-en="Each project starts with a concrete problem and keeps enough personality to stay memorable." data-hu="Minden projekt konkrét problémából indul, és elég karaktert tart meg ahhoz, hogy emlékezetes legyen.">Each project starts with a concrete problem and keeps enough personality to stay memorable.</span></div></aside>
+    </section>
 
-      <nav class="nav">
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#story" data-i18n="nav.about">What is this</a>
-        <a href="#build-principles" data-i18n="nav.principles">Principles</a>
-        <a href="#footer" data-i18n="nav.contact">Contact</a>
-      </nav>
+    <section class="section shell" id="projects">
+      <div class="section-heading"><div><p class="eyebrow" data-en="Current experiments" data-hu="Jelenlegi kísérletek">Current experiments</p><h2 data-en="The workbench." data-hu="A munkapad.">The workbench.</h2><p data-en="Five live ideas ranging from community workflows to delightfully specific AI and optimisation tools." data-hu="Öt élő ötlet a közösségi workflow-któl a kellemesen specifikus AI- és optimalizáló eszközökig.">Five live ideas ranging from community workflows to delightfully specific AI and optimisation tools.</p></div><span class="count-pill">05 PROJECTS</span></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-media"><img src="./assets/screenshots/grillhub.png" alt="GrillHub interface" loading="eager"><img class="project-icon" src="./assets/icons/grillhub-logo.png" alt=""></div><div class="project-body"><p class="project-kicker" data-en="Community BBQ platform" data-hu="Közösségi BBQ platform">Community BBQ platform</p><h3>GrillHub</h3><p class="project-summary" data-en="Events, recipes, invitations, friends and shopping lists meet in one workflow for organising cook-outs." data-hu="Események, receptek, meghívók, barátok és bevásárlólisták találkoznak egyetlen közös sütésszervező workflow-ban.">Events, recipes, invitations, friends and shopping lists meet in one workflow for organising cook-outs.</p><div class="tags"><span class="tag">React 19</span><span class="tag">Spring Boot</span><span class="tag">FastAPI AI</span></div><div class="project-links"><a class="button button-primary button-small" href="https://grillhub.vityalabs.com/" data-en="Open GrillHub" data-hu="GrillHub megnyitása">Open GrillHub</a></div></div></article>
 
-      <div class="topbar-actions">
-        <div class="lang-toggle" role="group" data-i18n-aria="lang.aria">
-          <button type="button" class="lang-option" data-lang="en">EN</button>
-          <button type="button" class="lang-option" data-lang="hu">HU</button>
-        </div>
-        <a class="ghost-button nav-cta" href="#projects" data-i18n="nav.cta">Open lab</a>
+        <article class="project-card"><div class="project-media"><img src="./assets/screenshots/halozo.png" alt="Hálózó network and Gantt interface" loading="lazy"></div><div class="project-body"><p class="project-kicker" data-en="CPM network &amp; Gantt scheduler" data-hu="CPM hálódiagram és Gantt ütemező">CPM network &amp; Gantt scheduler</p><h3>Hálózó</h3><p class="project-summary" data-en="Draw a construction schedule as a network; the critical path and Gantt chart recompute with every edit." data-hu="Rajzold fel az építési ütemtervet hálóként; a kritikus út és a Gantt minden szerkesztésre újraszámol.">Draw a construction schedule as a network; the critical path and Gantt chart recompute with every edit.</p><div class="tags"><span class="tag">React Flow</span><span class="tag">CPM engine</span><span class="tag">Expo</span></div><div class="project-links"><a class="button button-primary button-small" href="https://halozo.vityalabs.com/" data-en="Open Hálózó" data-hu="Hálózó megnyitása">Open Hálózó</a></div></div></article>
+
+        <article class="project-card"><div class="project-media"><img src="./assets/screenshots/toto.png" alt="TOTO lost animal reporting interface" loading="lazy"><img class="project-icon" src="./assets/icons/toto-logo.png" alt=""></div><div class="project-body"><p class="project-kicker">Track Others Together Outside</p><h3>TOTO</h3><p class="project-summary" data-en="A mobile-first community map for reporting and finding lost, found and stray animals." data-hu="Mobile-first közösségi térkép elveszett, megtalált és kóbor állatok bejelentésére és keresésére.">A mobile-first community map for reporting and finding lost, found and stray animals.</p><div class="tags"><span class="tag">React Native</span><span class="tag">Geolocation</span><span class="tag">Spring Boot</span></div><div class="project-links"><a class="button button-primary button-small" href="https://toto.vityalabs.com/" data-en="Open TOTO" data-hu="TOTO megnyitása">Open TOTO</a></div></div></article>
+
+        <article class="project-card"><div class="project-media"><img src="./assets/screenshots/shopper24.png" alt="Shopper24 store route interface" loading="lazy"><img class="project-icon" src="./assets/icons/shopper24-logo.png" alt=""></div><div class="project-body"><p class="project-kicker" data-en="Shopping route optimiser" data-hu="Bevásárlási útvonal-optimalizáló">Shopping route optimiser</p><h3>Shopper24</h3><p class="project-summary" data-en="Turns a raw shopping list into a category-sorted route and explains it on a visual store map." data-hu="Nyers bevásárlólistából kategóriákba rendezett útvonalat készít, és vizuális bolttérképen mutatja meg.">Turns a raw shopping list into a category-sorted route and explains it on a visual store map.</p><div class="tags"><span class="tag">Flask</span><span class="tag">List processing</span><span class="tag">Store map</span></div><div class="project-links"><a class="button button-primary button-small" href="https://shopper24.vityalabs.com/" data-en="Open Shopper24" data-hu="Shopper24 megnyitása">Open Shopper24</a></div></div></article>
+
+        <article class="project-card"><div class="project-media"><img src="./assets/screenshots/energourmet.png" alt="EnerGourmet pairing interface" loading="lazy"></div><div class="project-body"><p class="project-kicker" data-en="AI energy-drink sommelier" data-hu="AI energiaital-sommelier">AI energy-drink sommelier</p><h3>EnerGourmet</h3><p class="project-summary" data-en="A deliberately serious pairing assistant that recommends — and warns against — energy-drink flavours for a meal." data-hu="Szándékosan komoly pairing asszisztens, amely energiaital-ízeket ajánl — és ellenjavall — egy étel mellé.">A deliberately serious pairing assistant that recommends — and warns against — energy-drink flavours for a meal.</p><div class="tags"><span class="tag">Flask</span><span class="tag">Gemini</span><span class="tag">Bilingual</span></div><div class="project-links"><a class="button button-primary button-small" href="https://energourmet.vityalabs.com/" data-en="Open tasting page" data-hu="Kóstolóoldal megnyitása">Open tasting page</a></div></div></article>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow" data-i18n="hero.eyebrow">Independent software workshop</p>
-          <h1 data-i18n="hero.title">A project lab for the ideas that refused to stay in draft.</h1>
-          <p class="hero-text" data-i18n="hero.text">
-            Vitya Labs is a personal organisation for useful, sometimes strange, but always
-            build-ready projects.
-          </p>
+    <section class="section shell" id="principles"><div class="section-heading"><div><p class="eyebrow" data-en="Lab rules" data-hu="Labor-szabályok">Lab rules</p><h2 data-en="Useful. Specific. Alive." data-hu="Hasznos. Specifikus. Élő.">Useful. Specific. Alive.</h2></div></div><div class="principles"><article class="principle"><span>01</span><h3 data-en="Solve a recognisable problem" data-hu="Ismerős problémát oldjon meg">Solve a recognisable problem</h3><p data-en="A lab project may be odd, but its use should be clear within a sentence." data-hu="Egy laborprojekt lehet furcsa, de egy mondatból legyen világos, mire jó.">A lab project may be odd, but its use should be clear within a sentence.</p></article><article class="principle"><span>02</span><h3 data-en="Make the interaction visible" data-hu="Legyen látható az interakció">Make the interaction visible</h3><p data-en="Maps, networks and live recomputation turn abstract logic into something you can understand at a glance." data-hu="A térképek, hálók és élő újraszámítások az absztrakt logikát egy pillantással érthetővé teszik.">Maps, networks and live recomputation turn abstract logic into something you can understand at a glance.</p></article><article class="principle"><span>03</span><h3 data-en="Keep some personality" data-hu="Maradjon benne karakter">Keep some personality</h3><p data-en="A useful tool can still be warm, witty or confidently over-specific." data-hu="Egy hasznos eszköz is lehet meleg, szellemes vagy magabiztosan túlspecifikus.">A useful tool can still be warm, witty or confidently over-specific.</p></article></div></section>
 
-          <div class="hero-actions">
-            <a class="primary-button" href="#projects" data-i18n="hero.ctaProjects">Explore projects</a>
-            <a
-              class="ghost-button"
-              data-config-link="contact.emailUrl"
-              data-missing-label="Contact"
-              data-i18n="hero.ctaContact"
-              href="#"
-            >
-              Get in touch
-            </a>
-          </div>
+    <section class="closing shell"><div><p class="eyebrow" data-en="The wider workshop" data-hu="A tágabb műhely">The wider workshop</p><h2 data-en="Looking for games or production software?" data-hu="Játékot vagy éles szoftvert keresel?">Looking for games or production software?</h2></div><div><p data-en="Vitya Games and Vitya Soft now have their own focused homes, all connected through the Markus Viktor index." data-hu="A Vitya Games és a Vitya Soft külön fókuszált otthont kapott, mindkettő a Markus Viktor központi oldalán keresztül kapcsolódik.">Vitya Games and Vitya Soft now have their own focused homes, all connected through the Markus Viktor index.</p><a class="button button-primary" href="https://markusviktor.github.io/" data-en="Open all collections" data-hu="Minden gyűjtemény">Open all collections</a></div></section>
+  </main>
 
-          <div class="hero-stats" data-i18n-aria="hero.statsAria">
-            <article class="stat-card">
-              <strong>9</strong>
-              <span data-i18n="hero.stat1">featured projects</span>
-            </article>
-            <article class="stat-card">
-              <strong>1</strong>
-              <span data-i18n="hero.stat2">personal org</span>
-            </article>
-            <article class="stat-card">
-              <strong>100%</strong>
-              <span data-i18n="hero.stat3">built out of curiosity</span>
-            </article>
-          </div>
-        </div>
-
-        <aside class="hero-panel" data-reveal>
-          <div class="panel-frame">
-            <p class="panel-label" data-i18n="panel.label">lab signal</p>
-            <div class="signal-grid" id="signal-grid" aria-label="Project previews"></div>
-            <div class="panel-copy">
-              <h2 data-i18n="panel.heading">A useful playground</h2>
-              <p data-i18n="panel.body">
-                Productivity, community workflows, AI experiments and personal storytelling in one place.
-              </p>
-            </div>
-            <ul class="mini-list">
-              <li data-i18n="panel.item1">home operations platform</li>
-              <li data-i18n="panel.item2">community workflows</li>
-              <li data-i18n="panel.item3">personal software</li>
-              <li data-i18n="panel.item4">AI assisted experiments</li>
-            </ul>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow" data-i18n="projects.eyebrow">The workbench</p>
-          <div class="section-title-row">
-            <div>
-              <h2 data-i18n="projects.title">Active projects</h2>
-              <p data-i18n="projects.subtitle">
-                These are Vitya Labs' current nodes: community apps, utilities, AI experiments and playful web projects.
-              </p>
-            </div>
-            <div class="section-pill" data-i18n="projects.pill">9 active nodes</div>
-          </div>
-        </div>
-
-        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
-      </section>
-
-      <section class="section story-section" id="story">
-        <div class="story-copy" data-reveal>
-          <p class="eyebrow" data-i18n="story.eyebrow">Lab notes</p>
-          <h2 data-i18n="story.title">Where a hobby project isn't a side quest, but a real prototype.</h2>
-          <p data-i18n="story.p1">
-            Vitya Labs isn't about polishing a portfolio. It's more of a personal engineering lab where good ideas quickly
-            get a working UI, a real workflow and a bit of character too.
-          </p>
-          <p data-i18n="story.p2">
-            The common thread is that each project starts from a concrete personal or community problem.
-          </p>
-        </div>
-
-        <div class="story-panels" data-reveal>
-          <article class="story-card">
-            <span>01</span>
-            <h3 data-i18n="story.card1.title">Build fast, keep taste</h3>
-            <p data-i18n="story.card1.body">Speed matters, but the look and the vibe are part of the product too.</p>
-          </article>
-          <article class="story-card">
-            <span>02</span>
-            <h3 data-i18n="story.card2.title">Personal need first</h3>
-            <p data-i18n="story.card2.body">Most projects start from wishing this already existed in my own life.</p>
-          </article>
-          <article class="story-card">
-            <span>03</span>
-            <h3 data-i18n="story.card3.title">Ship weird things</h3>
-            <p data-i18n="story.card3.body">They don't only have to be useful. They can be memorable, witty or a little absurd too.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section principles-section" id="build-principles">
-        <div class="section-heading narrow" data-reveal>
-          <p class="eyebrow" data-i18n="principles.eyebrow">Build principles</p>
-          <h2 data-i18n="principles.title">How do these projects come together?</h2>
-        </div>
-
-        <div class="principles-grid">
-          <article class="principle-card" data-reveal>
-            <p class="principle-kicker" data-i18n="principles.card1.kicker">Platform</p>
-            <h3 data-i18n="principles.card1.title">A hobby project can grow into a system</h3>
-            <p data-i18n="principles.card1.body">
-              HOME is a full multi-tenant SaaS: maintenance, meters, costs and documents in one engine you can share with your family.
-            </p>
-          </article>
-
-          <article class="principle-card" data-reveal>
-            <p class="principle-kicker" data-i18n="principles.card2.kicker">Community</p>
-            <h3 data-i18n="principles.card2.title">Built around real workflows</h3>
-            <p data-i18n="principles.card2.body">
-              In GrillHub the events, recipes, invites and shopping lists build on each other instead of living as separate islands.
-            </p>
-          </article>
-
-          <article class="principle-card" data-reveal>
-            <p class="principle-kicker" data-i18n="principles.card3.kicker">Utility</p>
-            <h3 data-i18n="principles.card3.title">The practical can be striking too</h3>
-            <p data-i18n="principles.card3.body">
-              Shopper24 shows that even a simple list-processing tool can be far clearer when it works with a map and a route.
-            </p>
-          </article>
-
-          <article class="principle-card" data-reveal>
-            <p class="principle-kicker" data-i18n="principles.card4.kicker">Experiment</p>
-            <h3 data-i18n="principles.card4.title">AI isn't just an automaton — it's a character</h3>
-            <p data-i18n="principles.card4.body">
-              In EnerGourmet the pairing engine gives a useful and entertaining answer at once, while Vitya's Life turns a personal theme into a game.
-            </p>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer" id="footer">
-      <div class="footer-copy">
-        <p class="eyebrow" data-i18n="footer.eyebrow">Ready for the next node?</p>
-        <h2 data-i18n="footer.title">Curious about the projects? Jump straight into the live apps.</h2>
-        <p data-i18n="footer.body">
-          Each project has its own live link above — pick one and take a look. New nodes get added over time.
-        </p>
-      </div>
-
-      <div class="footer-actions">
-        <a class="primary-button" href="#projects" data-i18n="footer.ctaProjects">Explore the projects</a>
-        <a
-          class="ghost-button"
-          data-config-link="contact.emailUrl"
-          data-missing-label="Contact"
-          data-i18n="footer.ctaContact"
-          href="#"
-        >
-          Contact
-        </a>
-      </div>
-
-      <div class="footer-meta">
-        <span>Vitya Labs</span>
-        <span id="current-year"></span>
-        <span data-i18n="footer.aiNote">Contains AI-generated content</span>
-      </div>
-    </footer>
-  </div>
-
-  <script src="./site-config.js"></script>
-  <script src="./script.js"></script>
+  <footer class="footer shell"><span>© <span data-current-year></span> Vitya Labs</span><nav class="footer-links"><a href="https://markusviktor.github.io/">Markus Viktor</a><a href="https://vitya-games.github.io/">Games</a><a href="https://vitya-soft.github.io/">Soft</a><a href="mailto:hello@vityalabs.com" data-en="Contact" data-hu="Kapcsolat">Contact</a></nav></footer>
+  <script src="./site.js"></script>
 </body>
 </html>

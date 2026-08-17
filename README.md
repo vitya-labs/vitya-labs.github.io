@@ -1,15 +1,13 @@
 # vitya-labs.github.io
 
-Vitya Labs – building hobby projects, experiments and useful tools.
+Vitya Labs — experimental apps, utilities and playful prototypes.
 
-## App support pages
+## Featured projects
 
-- `/hotdog-runner/` – Hotdog Runner app information
-- `/hotdog-runner/support.html` – App Store Support URL
-- `/hotdog-runner/privacy.html` – App Store Privacy Policy URL
-- `/gull-flyer/` – Gull Flyer app information
-- `/gull-flyer/support.html` – App Store Support URL
-- `/gull-flyer/privacy.html` – App Store Privacy Policy URL
-- `/grill-sitter/` – Grill Sitter app information
-- `/grill-sitter/support.html` – App Store Support URL
-- `/grill-sitter/privacy.html` – App Store Privacy Policy URL
+- GrillHub
+- Hálózó
+- TOTO
+- Shopper24
+- EnerGourmet
+
+The existing app support and privacy-policy routes remain in this repository for backwards compatibility.
