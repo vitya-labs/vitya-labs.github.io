@@ -8,7 +8,7 @@ window.VITYA_LABS_CONFIG = {
     },
     hotdogRunner: {
       liveUrl: "https://apps.apple.com/hu/app/hotdog-runner/id6794843699?l=hu",
-      infoUrl: "./hotdog-runner/"
+      infoUrl: "https://vitya-games.github.io/hotdog-runner/"
     },
     grillhub: {
       liveUrl: "https://grillhub.vityalabs.com/"

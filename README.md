@@ -10,4 +10,6 @@ Vitya Labs — experimental apps, utilities and playful prototypes.
 - Shopper24
 - EnerGourmet
 
-The existing app support and privacy-policy routes remain in this repository for backwards compatibility.
+The game landing pages have moved to `vitya-games.github.io`. Existing app
+support and privacy-policy routes remain in this repository for backwards
+compatibility until the App Store Connect URLs have been migrated.
