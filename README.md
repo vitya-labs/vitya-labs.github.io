@@ -28,6 +28,10 @@ chosen language between them. Links to a sibling site are rewritten to carry a
 `?lang=` parameter, which the target page adopts on load and then removes from
 the address bar.
 
+Pirate English also swaps the artwork: an `<img>` carrying `data-logo-pr` shows
+its pirate mascot in that language and returns to the original logo in English
+and Hungarian.
+
 The legacy `hotdog-runner/`, `gull-flyer/` and `grill-sitter/` support and
 privacy pages are deliberately left untouched (English only, old wording) while
 App Store Connect still points at them; see
