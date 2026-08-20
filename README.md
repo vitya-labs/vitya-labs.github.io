@@ -32,6 +32,13 @@ Pirate English also swaps the artwork: an `<img>` carrying `data-logo-pr` shows
 its pirate mascot in that language and returns to the original logo in English
 and Hungarian.
 
+Translations have different lengths, so `site.js` measures every translated
+element in all three languages once the page has loaded and reserves the
+largest box it needs — width for anything sitting in a horizontal row,
+height for everything else. Switching languages therefore never moves the
+layout. The measurement is repeated after the webfonts settle and after a
+viewport resize.
+
 The legacy `hotdog-runner/`, `gull-flyer/` and `grill-sitter/` support and
 privacy pages are deliberately left untouched (English only, old wording) while
 App Store Connect still points at them; see
